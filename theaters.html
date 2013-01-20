@@ -1,0 +1,58 @@
+{{#tpl}}
+  <h2 class="toggle">{{ place.theater.name }}</h2>
+  <ul class="theater" data-theater="{{ place.theater.name }}">
+    {{#movieShowtimes}}
+    <li data-movie="{{ onShow.movie.title }}" data-duration="{{#toHours onShow.movie.runtime}}{{/toHours}}">
+      <img src="{{ onShow.movie.poster.href }}" alt="" class="thumb"/>
+      <div class="desc">
+        <h3>
+          {{ onShow.movie.title }}
+          <span class="infos">
+            ({{onShow.movie.castingShort.directors}}) - 
+            {{#toHours onShow.movie.runtime}}{{/toHours}}
+          </span>
+          {{#is3D screenFormat.$}}
+            <span class="label">3D</span>
+          {{/is3D}}
+          {{#VF version.original}}
+            <span class="label">VF</span>
+          {{/VF}}
+        </h3>
+        <div class="small">
+          {{#onShow.movie.castingShort}}
+            {{ actors }}
+          {{/onShow.movie.castingShort}}
+        </div>
+        <p>
+          {{#scr}}
+            {{#isToday d}}
+              {{#t}}
+                <span class="time" data-time="{{$}}">{{$}}</span> 
+              {{/t}}
+            {{/isToday}}
+          {{/scr}}
+        </p>
+      </div>
+    </li>   
+    {{/movieShowtimes}}    
+  </ul>
+{{/tpl}}
+
+
+<script type="text/javascript">
+  $('.toggle').click(function(){
+    $(this).next('ul').slideToggle();
+  });
+
+  $('.time').click(function(){
+    var start = $(this).data('time');
+    var movie = $(this).parents('li').data('movie');
+    var duration = $(this).parents('li').data('duration');
+    var theater = $(this).parents('ul').data('theater');
+
+    var end = sessionEnd(start, duration);
+
+    addFilm(theater, movie, start, end);
+
+  });
+</script>
