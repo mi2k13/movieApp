@@ -27,7 +27,7 @@
           {{#scr}}
             {{#isToday d}}
               {{#t}}
-                <span class="time" data-time="{{$}}">{{$}}</span> 
+                <span class="time" data-time="{{$}}" data-start="{{start $ p}}">{{$}} <span class="timeLeft small"></span></span> 
               {{/t}}
             {{/isToday}}
           {{/scr}}
@@ -51,7 +51,7 @@
     else {
       $(this).addClass('selected');
 
-      var start = $(this).data('time');
+      var start = $(this).data('start');
       var movie = $(this).parents('li').data('movie');
       var duration = $(this).parents('li').data('duration');
       var theater = $(this).parents('ul').data('theater');

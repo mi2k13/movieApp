@@ -21,14 +21,33 @@ function addFilm(cinema, name, start, end) {
 }
 
 function isSoon(end) {
-  var time;
+  var start;
   $('.time').each(function(){
-    time = $(this).data('time');
-    if(time > end)
-      $(this).css('background-color','orange');
+    start = $(this).data('start');
+    if(start > end) {
+      var startSec = timeToSec(start);
+      var endSec = timeToSec(end);
+      
+      if(startSec - endSec <= 60 * 60) {
+        if(startSec - endSec  <= 5 * 60)
+          $(this).css('background-color','red');
+        else if(startSec - endSec  <= 15 * 60)
+          $(this).css('background-color','orange');
+        else
+          $(this).css('background-color','yellow');
+        $(this).find('.timeLeft').text('(' + secToMin(startSec - endSec) + 'min)');
+      }
+      else
+        $(this).css('background-color','green');
+    }
     else
       $(this).css('background-color','#eee');
   });
+}
+
+function timeToSec(time) {
+  var t = time.split(':');
+  return t[0]*3600 + t[1]*60;
 }
 
 function secToTime(secs) {
@@ -42,12 +61,33 @@ function secToTime(secs) {
   return hours + 'h' + minutes;
 }
 
+function secToMin(secs) {
+  return secs / 60;
+}
+
+
+
+function sessionStart(start, pause) {
+  var startA = start.split(':');
+
+  var hours = parseInt(startA[0], 10);
+  var minutes = parseInt(startA[1], 10) + parseInt(pause, 10);
+  if (minutes > 60) {
+    hours++;
+    minutes -= 60;
+  }
+  if (minutes < 10)
+    minutes = '0' + minutes;
+
+  return hours + ':' + minutes;
+}
+
 function sessionEnd(start, duration) {
   var startA = start.split(':');
   var durationA = duration.split('h');
 
   var hours = parseInt(startA[0], 10) + parseInt(durationA[0], 10);
-  var minutes = parseInt(startA[1], 10) + 15 + parseInt(durationA[1], 10);
+  var minutes = parseInt(startA[1], 10) + parseInt(durationA[1], 10);
   if (minutes > 60) {
     hours++;
     minutes -= 60;
@@ -82,6 +122,7 @@ function loadTemplate(templateName, templateInput) {
     success: function (data) {
       source = data;
       template = Handlebars.compile(source);
+      console.log(templateInput.feed.theaterShowtimes);
       $('#' + templateName).html(template({
         tpl: templateInput.feed.theaterShowtimes
       }));
@@ -113,4 +154,8 @@ Handlebars.registerHelper('VF', function(v1, options) {
 
 Handlebars.registerHelper('toHours', function(secs) {
   return secToTime(secs);
+});
+
+Handlebars.registerHelper('start', function(start, pause) {
+  return sessionStart(start, pause);
 });
