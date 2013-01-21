@@ -1,6 +1,6 @@
 {{#tpl}}
   <h2 class="toggle">{{ place.theater.name }}</h2>
-  <ul class="theater" data-theater="{{ place.theater.name }}">
+  <ul class="theater sortable" data-theater="{{ place.theater.name }}">
     {{#movieShowtimes}}
     <li data-movie="{{ onShow.movie.title }}" data-duration="{{#toHours onShow.movie.runtime}}{{/toHours}}">
       <img src="{{ onShow.movie.poster.href }}" alt="" class="thumb"/>
@@ -40,6 +40,8 @@
 
 
 <script type="text/javascript">
+  $('.sortable').sortable();
+
   $('.toggle').click(function(){
     $(this).next('ul').slideToggle();
   });

@@ -39,6 +39,7 @@ h3 {
 .label, .time {
   padding: 1px 5px;
   border-radius: 3px;
+  white-space: nowrap;
 }
 
 .label {
@@ -50,10 +51,13 @@ h3 {
 .time {
   background-color: #e6e6e6;
   border-bottom: 1px solid #ccc;
+  margin: 5px;
 }
 
 .selected {
-  color: red;
+  color: #00A287;
+  border-width: 3px;
+  font-weight: bold;
 }
 
 .small {

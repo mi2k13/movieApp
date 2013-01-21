@@ -15,8 +15,10 @@ $(document).ready(function() {
 });
 
 
-function addFilm(cinema, name, start, end) {
-  localStorage["film"] = [cinema, name, start, end];
+function addFilm(cinema, movie, start, end) {
+  localStorage["film"] = [cinema, movie, start, end];
+  var insert = '<li>' + start + ' - ' + end + ' : <b>' + movie + '</b> <span class="small">(' + cinema + ')</span> ' + '</li>';
+  $("#myMovies ul").append(insert);
   isSoon(end);
 }
 
@@ -28,17 +30,18 @@ function isSoon(end) {
       var startSec = timeToSec(start);
       var endSec = timeToSec(end);
       
-      if(startSec - endSec <= 60 * 60) {
-        if(startSec - endSec  <= 5 * 60)
-          $(this).css('background-color','red');
-        else if(startSec - endSec  <= 15 * 60)
-          $(this).css('background-color','orange');
-        else
-          $(this).css('background-color','yellow');
-        $(this).find('.timeLeft').text('(' + secToMin(startSec - endSec) + 'min)');
-      }
+      if(startSec - endSec  <= 5 * 60)
+        $(this).css('background-color','#F5001D');
+      else if(startSec - endSec  <= 15 * 60)
+        $(this).css('background-color','#FFA200');
+      else if(startSec - endSec  <= 30 * 60)
+        $(this).css('background-color','#34D0B6');
+      else if(startSec - endSec  <= 60 * 60)
+        $(this).css('background-color','#00A287');
       else
-        $(this).css('background-color','green');
+        $(this).css('background-color','#006957');
+
+      $(this).find('.timeLeft').text('(' + secToMin(startSec - endSec) + 'min)');
     }
     else
       $(this).css('background-color','#eee');
@@ -72,7 +75,7 @@ function sessionStart(start, pause) {
 
   var hours = parseInt(startA[0], 10);
   var minutes = parseInt(startA[1], 10) + parseInt(pause, 10);
-  if (minutes > 60) {
+  if (minutes >= 60) {
     hours++;
     minutes -= 60;
   }
@@ -122,7 +125,6 @@ function loadTemplate(templateName, templateInput) {
     success: function (data) {
       source = data;
       template = Handlebars.compile(source);
-      console.log(templateInput.feed.theaterShowtimes);
       $('#' + templateName).html(template({
         tpl: templateInput.feed.theaterShowtimes
       }));
