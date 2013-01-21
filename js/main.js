@@ -17,7 +17,18 @@ $(document).ready(function() {
 
 function addFilm(cinema, name, start, end) {
   localStorage["film"] = [cinema, name, start, end];
-  console.log(localStorage['film']);
+  isSoon(end);
+}
+
+function isSoon(end) {
+  var time;
+  $('.time').each(function(){
+    time = $(this).data('time');
+    if(time > end)
+      $(this).css('background-color','orange');
+    else
+      $(this).css('background-color','#eee');
+  });
 }
 
 function secToTime(secs) {

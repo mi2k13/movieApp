@@ -35,12 +35,25 @@ h3 {
   overflow: hidden;
 }
 
+
+.label, .time {
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
 .label {
   background-color: #F10845;
   color: #fff;
   font-size: 0.8em;
-  padding: 1px 5px;
-  border-radius: 3px;
+}
+
+.time {
+  background-color: #e6e6e6;
+  border-bottom: 1px solid #ccc;
+}
+
+.selected {
+  color: red;
 }
 
 .small {

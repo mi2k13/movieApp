@@ -45,14 +45,19 @@
   });
 
   $('.time').click(function(){
-    var start = $(this).data('time');
-    var movie = $(this).parents('li').data('movie');
-    var duration = $(this).parents('li').data('duration');
-    var theater = $(this).parents('ul').data('theater');
+    if($(this).hasClass('selected'))
+      $(this).removeClass('selected');
 
-    var end = sessionEnd(start, duration);
+    else {
+      $(this).addClass('selected');
 
-    addFilm(theater, movie, start, end);
+      var start = $(this).data('time');
+      var movie = $(this).parents('li').data('movie');
+      var duration = $(this).parents('li').data('duration');
+      var theater = $(this).parents('ul').data('theater');
+      var end = sessionEnd(start, duration);
 
+      addFilm(theater, movie, start, end);
+    }
   });
 </script>
