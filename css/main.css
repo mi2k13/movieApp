@@ -10,14 +10,28 @@ h3 {
   margin-bottom: 0;
 }
 
+.remove {
+  width: 32px;
+  height: 32px;
+  background: url(img/remove.png) no-repeat;
+  float: right;
+}
+
 .theater {
   margin-bottom: 80px;
+  padding-left: 0;
 }
 
 .theater li {
+  list-style: none;
   min-height: 155px;
   border-top: 1px solid #ccc;
 }
+
+.theater li.sortable-placeholder {
+    border: 1px dashed #ddd;
+    background-color: #f9f9f9;
+  }
 
 .theater li h3 .infos {
   color: #666;

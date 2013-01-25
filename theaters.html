@@ -3,7 +3,8 @@
   <ul class="theater sortable" data-theater="{{ place.theater.name }}">
     {{#movieShowtimes}}
     <li data-movie="{{ onShow.movie.title }}" data-duration="{{#toHours onShow.movie.runtime}}{{/toHours}}">
-      <img src="{{ onShow.movie.poster.href }}" alt="" class="thumb"/>
+      <div class="remove"></div>
+      <img src="{{ onShow.movie.poster.href }}" alt="" class="thumb handle"/>
       <div class="desc">
         <h3>
           {{ onShow.movie.title }}
@@ -40,8 +41,13 @@
 
 
 <script type="text/javascript">
-  $('.sortable').sortable();
+  $('.sortable').sortable({
+    handle: '.handle'
+  });
 
+  $('.remove').click(function(){
+    $(this).parent('li').remove();
+  });
   $('.toggle').click(function(){
     $(this).next('ul').slideToggle();
   });

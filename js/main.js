@@ -26,25 +26,28 @@ function isSoon(end) {
   var start;
   $('.time').each(function(){
     start = $(this).data('start');
-    if(start > end) {
-      var startSec = timeToSec(start);
-      var endSec = timeToSec(end);
-      
-      if(startSec - endSec  <= 5 * 60)
-        $(this).css('background-color','#F5001D');
-      else if(startSec - endSec  <= 15 * 60)
-        $(this).css('background-color','#FFA200');
-      else if(startSec - endSec  <= 30 * 60)
-        $(this).css('background-color','#34D0B6');
-      else if(startSec - endSec  <= 60 * 60)
-        $(this).css('background-color','#00A287');
-      else
-        $(this).css('background-color','#006957');
 
-      $(this).find('.timeLeft').text('(' + secToMin(startSec - endSec) + 'min)');
-    }
-    else
+    if(start < end) {
       $(this).css('background-color','#eee');
+      return;
+    }
+    
+    var startSec = timeToSec(start);
+    var endSec = timeToSec(end);
+    
+    if(startSec - endSec  <= 5 * 60)
+      $(this).css('background-color','#F5001D');
+    else if(startSec - endSec  <= 15 * 60)
+      $(this).css('background-color','#FFA200');
+    else if(startSec - endSec  <= 30 * 60)
+      $(this).css('background-color','#34D0B6');
+    else if(startSec - endSec  <= 60 * 60)
+      $(this).css('background-color','#00A287');
+    else
+      $(this).css('background-color','#006957');
+
+    $(this).find('.timeLeft').text('(' + secToMin(startSec - endSec) + 'min)');
+    
   });
 }
 
@@ -73,8 +76,8 @@ function secToMin(secs) {
 function sessionStart(start, pause) {
   var startA = start.split(':');
 
-  var hours = parseInt(startA[0], 10);
-  var minutes = parseInt(startA[1], 10) + parseInt(pause, 10);
+  var hours = Number(startA[0]);
+  var minutes = Number(startA[1]) + Number(pause);
   if (minutes >= 60) {
     hours++;
     minutes -= 60;
@@ -89,8 +92,8 @@ function sessionEnd(start, duration) {
   var startA = start.split(':');
   var durationA = duration.split('h');
 
-  var hours = parseInt(startA[0], 10) + parseInt(durationA[0], 10);
-  var minutes = parseInt(startA[1], 10) + parseInt(durationA[1], 10);
+  var hours = Number(startA[0]) + Number(durationA[0]);
+  var minutes = Number(startA[1]) + Number(durationA[1]);
   if (minutes > 60) {
     hours++;
     minutes -= 60;
