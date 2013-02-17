@@ -2,7 +2,8 @@
   <h2 class="toggle highlight">{{ place.theater.name }}</h2>
   <ul class="theater sortable" data-theater="{{ place.theater.name }}">
     {{#movieShowtimes}}
-    <li data-movie="{{ onShow.movie.title }}" data-duration="{{#toHours onShow.movie.runtime}}{{/toHours}}">
+    {{#notPreview preview}}
+    <li data-movie="{{ onShow.movie.title }}" data-runtime="{{onShow.movie.runtime}}" data-duration="{{#toHours onShow.movie.runtime}}{{/toHours}}">
       <div class="remove"></div>
       <img src="{{ onShow.movie.poster.href }}" alt="" class="thumb handle"/>
       <div class="desc">
@@ -38,7 +39,8 @@
           {{/scr}}
         </p>
       </div>
-    </li>   
+    </li>
+    {{/notPreview}}
     {{/movieShowtimes}}    
   </ul>
 {{/tpl}}
@@ -66,10 +68,12 @@
       var start = $(this).data('start');
       var movie = $(this).parents('li').data('movie');
       var duration = $(this).parents('li').data('duration');
+      var runtime = $(this).parents('li').data('runtime') / 60;
       var theater = $(this).parents('ul').data('theater');
       var end = sessionEnd(start, duration);
 
       addFilm(theater, movie, start, end);
+      drawShow(start, runtime, movie)
     }
   });
 </script>

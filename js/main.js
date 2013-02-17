@@ -1,20 +1,22 @@
 $(document).ready(function() {
 
+
   var theaters = 'C0159,C0053';
   loadData('theaters='+ theaters, 'theaters');
 
   var d = new Date();
-  var minutes, hours, month, day;
+  var minutes = d.getMinutes(),
+      hours = d.getHours(),
+      month = Number(d.getMonth()+1),
+      day = d.getDate();
 
-  if (Number(d.getMinutes()) < 10)  minutes = '0' + d.getMinutes();
-  if (Number(d.getHours()) < 10)    hours =   '0' + d.getHours();
-  if (Number(d.getDate()) < 10)     day =     '0' + d.getDate();
-  if (Number(d.getMonth()+1) < 10)  month =   '0' + Number(d.getMonth()+1);
+  if (Number(d.getMinutes()) < 10)  minutes = '0' + minutes;
+  if (Number(d.getHours()) < 10)    hours =   '0' + hours;
+  if (Number(d.getDate()) < 10)     day =     '0' + day;
+  if (Number(d.getMonth()+1) < 10)  month =   '0' + month;
 
   localStorage.setItem('hours', hours + ':' + minutes);
   localStorage.setItem('date', d.getFullYear() + '-' + month + '-' + day);
-
-
 });
 
 
@@ -31,16 +33,17 @@ function isSoon(end) {
     start = $(this).data('start');
 
     if(start < end) {
-      $(this).css('background-color','#eee');
+      if (!$(this).hasClass('selected')) {
+        $(this).css('background-color','#eee');
+        $(this).css('color','#ccc');
+      }
+      $(this).find('.timeLeft').text('');
       return;
     }
     
     var waiting = timeToSec(start) - timeToSec(end);
 
-    
-    if(waiting < 0)
-      $(this).css('color','#999');
-    else if(waiting  <= 7 * 60)
+    if(waiting  <= 7 * 60)
       $(this).css('background-color','#FF7140');
     else if(waiting  <= 30 * 60)
       $(this).css('background-color','#FFBC00');
@@ -136,6 +139,25 @@ function loadTemplate(templateName, templateInput) {
   });
 };
 
+function drawShow(start, duration, title) {
+  var realStart = (timeToMin(start) - 540) * 100 / (1500 - 540); // timeline starts at 9am
+  var realDuration = Number(duration) * 100 / (1500 - 540);
+  $('.timeline').append('<div class="show" style="width:' + realDuration + '%; left: ' + realStart + '%;"><span class="breath">' + title + '</span></div>');
+}
+
+function timeToMin(time) {
+  var t = time.split(':');
+  return Number(t[0]) * 60 + Number(t[1]);
+}
+
+
+
+Handlebars.registerHelper('notPreview', function(status, options) {
+  if(status == 'false') {
+    return options.fn(this);
+  }
+  return options.inverse(this);
+});
 
 Handlebars.registerHelper('isToday', function(date, options) {
   if(date == localStorage.getItem('date')) {
