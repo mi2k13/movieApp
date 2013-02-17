@@ -4,13 +4,16 @@ $(document).ready(function() {
   loadData('theaters='+ theaters, 'theaters');
 
   var d = new Date();
-  var minutes;
+  var minutes, hours, month, day;
 
-  if (parseInt(d.getMinutes(), 10) < 10)
-    minutes = '0' + d.getMinutes();
+  if (Number(d.getMinutes()) < 10)  minutes = '0' + d.getMinutes();
+  if (Number(d.getHours()) < 10)    hours =   '0' + d.getHours();
+  if (Number(d.getDate()) < 10)     day =     '0' + d.getDate();
+  if (Number(d.getMonth()+1) < 10)  month =   '0' + Number(d.getMonth()+1);
 
-  localStorage.setItem('hours', d.getHours() + ':' + minutes);
-  localStorage.setItem('date', d.getFullYear() + '-' + d.getMonth()+1 + '-' + d.getDate());
+  localStorage.setItem('hours', hours + ':' + minutes);
+  localStorage.setItem('date', d.getFullYear() + '-' + month + '-' + day);
+
 
 });
 
@@ -32,21 +35,19 @@ function isSoon(end) {
       return;
     }
     
-    var startSec = timeToSec(start);
-    var endSec = timeToSec(end);
-    
-    if(startSec - endSec  <= 5 * 60)
-      $(this).css('background-color','#F5001D');
-    else if(startSec - endSec  <= 15 * 60)
-      $(this).css('background-color','#FFA200');
-    else if(startSec - endSec  <= 30 * 60)
-      $(this).css('background-color','#34D0B6');
-    else if(startSec - endSec  <= 60 * 60)
-      $(this).css('background-color','#00A287');
-    else
-      $(this).css('background-color','#006957');
+    var waiting = timeToSec(start) - timeToSec(end);
 
-    $(this).find('.timeLeft').text('(' + secToMin(startSec - endSec) + 'min)');
+    
+    if(waiting < 0)
+      $(this).css('color','#999');
+    else if(waiting  <= 7 * 60)
+      $(this).css('background-color','#FF7140');
+    else if(waiting  <= 30 * 60)
+      $(this).css('background-color','#FFBC00');
+    else
+      $(this).css('color','#999');
+
+    $(this).find('.timeLeft').text('(' + secToMin(waiting) + 'min)');
     
   });
 }
@@ -109,7 +110,7 @@ function loadData(path, template) {
     url: 'http://api.allocine.fr/rest/v3/showtimelist?partner=YW5kcm9pZC12M3M&format=json&' + path,
     contentType: 'application/json',
     dataType: 'jsonp',
-    cache: false,
+    cache: true,
     processData: false,
     type: 'GET',
     success: function(data, textStatus, jqXHR) {
@@ -136,8 +137,8 @@ function loadTemplate(templateName, templateInput) {
 };
 
 
-Handlebars.registerHelper('isToday', function(v1, options) {
-  if(v1 == localStorage.getItem('date')) {
+Handlebars.registerHelper('isToday', function(date, options) {
+  if(date == localStorage.getItem('date')) {
     return options.fn(this);
   }
   return options.inverse(this);

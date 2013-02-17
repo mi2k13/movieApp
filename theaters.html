@@ -1,5 +1,5 @@
 {{#tpl}}
-  <h2 class="toggle">{{ place.theater.name }}</h2>
+  <h2 class="toggle highlight">{{ place.theater.name }}</h2>
   <ul class="theater sortable" data-theater="{{ place.theater.name }}">
     {{#movieShowtimes}}
     <li data-movie="{{ onShow.movie.title }}" data-duration="{{#toHours onShow.movie.runtime}}{{/toHours}}">
@@ -28,7 +28,11 @@
           {{#scr}}
             {{#isToday d}}
               {{#t}}
+                {{#if pause}}
+                <span class="time" data-time="{{$}}" data-start="{{start $ p}}">{{start $ p}} <span class="timeLeft small"></span></span> 
+                {{else}}
                 <span class="time" data-time="{{$}}" data-start="{{start $ p}}">{{$}} <span class="timeLeft small"></span></span> 
+                {{/if}}
               {{/t}}
             {{/isToday}}
           {{/scr}}
