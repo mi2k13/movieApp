@@ -3,41 +3,47 @@
   <ul class="theater sortable" data-theater="{{ place.theater.name }}">
     {{#movieShowtimes}}
     {{#notPreview preview}}
-    <li data-movie="{{ onShow.movie.title }}" data-runtime="{{onShow.movie.runtime}}" data-duration="{{#toHours onShow.movie.runtime}}{{/toHours}}">
+    <li data-movie="{{ onShow.movie.title }}" data-runtime="{{onShow.movie.runtime}}" data-duration="{{toHours onShow.movie.runtime}}">
       <div class="remove"></div>
-      <img src="{{ onShow.movie.poster.href }}" alt="" class="thumb handle"/>
+      
+      <!-- <img src="img/up.jpg" alt="" class="thumb handle"/> -->
+      <img src="http://fr.web.img4.acsta.net/r_160_240/b_1_d6d6d6/{{ onShow.movie.poster.path }}" alt="" class="thumb handle"/>
+      
       <div class="desc">
-        <h3>
-          {{ onShow.movie.title }}
-          <span class="infos">
-            ({{onShow.movie.castingShort.directors}}) - 
-            {{#toHours onShow.movie.runtime}}{{/toHours}}
-          </span>
+        <h3>{{ onShow.movie.title }}</h3>
+        <div class="infos">
+          {{onShow.movie.castingShort.directors}} / 
+          {{#toHours onShow.movie.runtime}}{{/toHours}}
           {{#is3D screenFormat.$}}
-            <span class="label">3D</span>
+            / <span class="label">3D</span>
           {{/is3D}}
           {{#VF version.original}}
-            <span class="label">VF</span>
+            / <span class="label">VF</span>
           {{/VF}}
-        </h3>
-        <div class="small">
+        </div>
+
+        
+        <!-- <div class="infos">
+          {{#if onShow.movie.statistics}}
+            <span class="rate">{{isGood onShow.movie.statistics.pressRating}}</span> <span class="rate">{{isGood onShow.movie.statistics.userRating}}</span> 
+          {{/if}}
           {{#onShow.movie.castingShort}}
             {{ actors }}
           {{/onShow.movie.castingShort}}
-        </div>
-        <p>
+        </div> -->
+        <div>
           {{#scr}}
             {{#isToday d}}
               {{#t}}
                 {{#if pause}}
-                <span class="time" data-time="{{$}}" data-start="{{start $ p}}">{{start $ p}} <span class="timeLeft small"></span></span> 
+                <span class="time" data-time="{{$}}" data-start="{{start $ p}}">{{start $ p}} <span class="timeLeft"></span></span> 
                 {{else}}
-                <span class="time" data-time="{{$}}" data-start="{{start $ p}}">{{$}} <span class="timeLeft small"></span></span> 
+                <span class="time" data-time="{{$}}" data-start="{{start $ p}}">{{$}} <span class="timeLeft"></span></span> 
                 {{/if}}
               {{/t}}
             {{/isToday}}
           {{/scr}}
-        </p>
+        </div>
       </div>
     </li>
     {{/notPreview}}
@@ -59,11 +65,12 @@
   });
 
   $('.time').click(function(){
-    if($(this).hasClass('selected'))
+    if($(this).hasClass('selected') || $(this).hasClass('over'))
       $(this).removeClass('selected');
 
     else {
       $(this).addClass('selected');
+      $(this).find('.timeLeft').text('');
 
       var start = $(this).data('start');
       var movie = $(this).parents('li').data('movie');
@@ -76,4 +83,5 @@
       drawShow(start, runtime, movie)
     }
   });
+
 </script>

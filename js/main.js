@@ -2,7 +2,11 @@ $(document).ready(function() {
 
 
   var theaters = 'C0159,C0053';
-  loadData('theaters='+ theaters, 'theaters');
+  //loadData('theaters='+ theaters, 'theaters');
+
+  $.getJSON("allocine.json", function(data){
+    loadTemplate('theaters', data);
+  });
 
   var d = new Date();
   var minutes = d.getMinutes(),
@@ -20,39 +24,54 @@ $(document).ready(function() {
 });
 
 
-function addFilm(cinema, movie, start, end) {
-  localStorage["film"] = [cinema, movie, start, end];
-  var insert = '<li>' + start + ' - ' + end + ' : <b>' + movie + '</b> <span class="small">(' + cinema + ')</span> ' + '</li>';
-  $("#myMovies ul").append(insert);
+function addFilm(theater, movie, start, end) {
+  var insert = '<li><div class="schedules">' + start + ' - ' + end + '</div><div class=""><b>' + movie + '</b><br/> <span class="infos">' + theater + '</span></div></li>';
+  $("#myMovies").append(insert);
   isSoon(end);
 }
 
 function isSoon(end) {
-  var start;
-  $('.time').each(function(){
-    start = $(this).data('start');
+  var times       = document.getElementsByClassName('time'),
+      timesLength = times.length,
+      start,
+      waiting;
 
-    if(start < end) {
-      if (!$(this).hasClass('selected')) {
-        $(this).css('background-color','#eee');
-        $(this).css('color','#ccc');
+  for(var i = 0; i < timesLength - 1 ; ++i) {
+    start = times[i].getAttribute('data-start');
+    waiting = timeToSec(start) - timeToSec(end);
+
+    if(waiting <= 0) {
+
+      if(!times[i].className.match(/\bover\b/))
+        times[i].style.background = 'white';
+
+      // all movies before the end are over
+      if(!times[i].className.match(/\bover\b/) && !times[i].className.match(/\bselected\b/)) {
+        times[i].className += ' over';
+        times[i].style.backgroundColor = '#ddd';
+        times[i].style.color = '#bbb';
+        times[i].style.textDecoration = 'line-through';
+        $(times[i]).find('.timeLeft').text('');
       }
-      $(this).find('.timeLeft').text('');
-      return;
+
+    } else {
+      
+      if(!times[i].className.match(/\bover\b/)) {
+
+        if(waiting  <= 7 * 60)
+          times[i].style.backgroundColor = '#FF7260';
+        else if(waiting  <= 35 * 60)
+          times[i].style.backgroundColor = '#FFAF60';
+        else if(waiting  <= 60 * 60)
+          times[i].style.backgroundColor = '#48BF67';
+
+        if(waiting  <= 80 * 60)
+          $(times[i]).find('.timeLeft').text('(' + secToMin(waiting) + 'mn)');
+      }
+
     }
-    
-    var waiting = timeToSec(start) - timeToSec(end);
 
-    if(waiting  <= 7 * 60)
-      $(this).css('background-color','#FF7140');
-    else if(waiting  <= 30 * 60)
-      $(this).css('background-color','#FFBC00');
-    else
-      $(this).css('color','#999');
-
-    $(this).find('.timeLeft').text('(' + secToMin(waiting) + 'min)');
-    
-  });
+  }
 }
 
 function timeToSec(time) {
@@ -150,13 +169,23 @@ function timeToMin(time) {
   return Number(t[0]) * 60 + Number(t[1]);
 }
 
-
-
 Handlebars.registerHelper('notPreview', function(status, options) {
   if(status == 'false') {
     return options.fn(this);
   }
   return options.inverse(this);
+});
+
+Handlebars.registerHelper('isGood', function(rate) {
+  if (rate >= 3.9)
+    return '<3';
+  if (rate > 2.7)
+    return ':)';
+  if (rate > 2)
+    return ':/';
+  else
+    return ':(';
+  
 });
 
 Handlebars.registerHelper('isToday', function(date, options) {
