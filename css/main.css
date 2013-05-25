@@ -80,7 +80,8 @@ h3 {
   width: 32px;
   height: 32px;
   background: url(img/remove.png) no-repeat;
-  float: right;
+  position: absolute;
+  right: 0;
 }
 
 .theater {
@@ -129,10 +130,11 @@ h3 {
   border-bottom: 1px solid #ccc;
   margin: 4px 3px;
   display: inline-block;
+  font-size: 13px;
 }
 
 .timeLeft {
-  font-size: 11px;
+  font-size: 10px;
 }
 
 .selected {

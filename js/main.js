@@ -97,7 +97,8 @@ function sessionStart(start, pause) {
     hours++;
     minutes -= 60;
   }
-  else if (minutes < 10)
+  
+  if (minutes < 10)
     minutes = '0' + minutes;
 
   return hours + ':' + minutes;
@@ -109,13 +110,17 @@ function sessionEnd(start, duration) {
       hours     = Number(startA[0]) + Number(durationA[0]),
       minutes   = Number(startA[1]) + Number(durationA[1]);
 
+
   if (minutes > 60) {
     hours++;
     minutes -= 60;
   }
 
-  else if (minutes < 10)
+  if (minutes < 10)
     minutes = '0' + minutes;
+
+  if (hours >= 24)
+    hours = 24 - hours;
 
   return hours + ':' + minutes;
 }
@@ -152,9 +157,13 @@ function loadTemplate(templateName, templateInput) {
 };
 
 function drawShow(start, duration, title) {
-  var realStart    = (timeToMin(start) - 540) * 100 / (1500 - 540), // timeline starts at 9am
-      realDuration = Number(duration) * 100 / (1500 - 540);
-  $('#hours').append('<div class="show" style="width:' + realDuration + '%; left: ' + realStart + '%;"><span class="breath">' + title + '</span></div>');
+  var ctrnWidth    = 800,
+      itemWidth    = ctrnWidth / 15.5,
+      marginLeft   = 9 * 60,
+      realStart    = (timeToMin(start) - marginLeft) / 60 * itemWidth, // timeline starts at 9am
+      realDuration = Number(duration) / 60 * itemWidth;
+
+  $('#hours').append('<div class="show" style="width:' + realDuration + 'px; left: ' + realStart + 'px;"><span class="breath">' + title + '</span></div>');
 }
 
 function timeToMin(time) {
@@ -207,9 +216,9 @@ function swipe(obj, nbItem) {
 
 
   var ctrnWidth    = $(obj)[0].clientWidth,
-      IMG_WIDTH    = parseInt(ctrnWidth / nbItem, 10) * 5,
+      IMG_WIDTH    = parseInt(ctrnWidth / nbItem, 10) * 4,
       currentImg   = 0,
-      maxImages    = 3,
+      maxImages    = 4,
       speed        = 500,
       imgs,
       swipeOptions = {
@@ -217,9 +226,7 @@ function swipe(obj, nbItem) {
         threshold:75      
       }
 
-
-console.log(ctrnWidth, IMG_WIDTH);
-
+  // swipe code from http://labs.rampinteractive.co.uk/touchSwipe/demos/
   $(function() {
     imgs = $(obj);
     imgs.swipe(swipeOptions);
