@@ -14,12 +14,12 @@
         <div class="infos">
           {{onShow.movie.castingShort.directors}} / 
           {{#toHours onShow.movie.runtime}}{{/toHours}}
-          {{#is3D screenFormat.$}}
-            / <span class="label">3D</span>
-          {{/is3D}}
           {{#VF version.original}}
             / <span class="label">VF</span>
           {{/VF}}
+          {{#is3D screenFormat.$}}
+            / <span class="label">3D</span>
+          {{/is3D}}
         </div>
 
         

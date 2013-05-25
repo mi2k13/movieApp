@@ -350,145 +350,89 @@
                 ]
               }
             ]
-          },
-          {
-            "ticketing":"http:\/\/www.ugc.fr\/reservationIdentification.html?id=330170941752&part=all",
+          },{
+            "ticketing":"http:\/\/www.ugc.fr\/reservationIdentification.html?id=330170942115&part=all",
             "preview":"false",
-            "releaseWeek":"false",
+            "releaseWeek":"true",
             "onShow":{
               "movie":{
-                "code":201026,
-                "title":"Paulette",
+                "code":145397,
+                "title":"Happiness Therapy",
                 "castingShort":{
-                  "directors":"Jérôme Enrico",
-                  "actors":"Bernadette Lafont, Carmen Maura, Dominique Lavanant, Françoise Bertin, André Penvern"
+                  "directors":"David O. Russell",
+                  "actors":"Bradley Cooper, Jennifer Lawrence, Robert De Niro, Jacki Weaver, Chris Tucker"
                 },
                 "release":{
-                  "releaseDate":"2013-01-16"
+                  "releaseDate":"2013-01-30"
                 },
-                "runtime":5220,
+                "runtime":7320,
                 "genre":[
                   {
-                    "code":13005,
-                    "$":"ComÃ©die"
+                    "code":13002,
+                    "$":"ComÃ©die dramatique"
                   }
                 ],
                 "poster":{
-                  "path":"\/medias\/nmedia\/18\/91\/27\/63\/20395900.jpg",
-                  "href":"http:\/\/images.allocine.fr\/medias\/nmedia\/18\/91\/27\/63\/20395900.jpg"
+                  "path":"\/medias\/nmedia\/18\/94\/09\/83\/20302958.jpg",
+                  "href":"http:\/\/images.allocine.fr\/medias\/nmedia\/18\/94\/09\/83\/20302958.jpg"
                 },
                 "trailer":{
-                  "code":19436837,
-                  "href":"http:\/\/www.allocine.fr\/blogvision\/19436837"
+                  "code":19401816,
+                  "href":"http:\/\/www.allocine.fr\/blogvision\/19401816"
                 },
                 "statistics":{
-                  "pressRating":2.5,
-                  "pressReviewCount":8,
-                  "userRating":3.527501,
-                  "userReviewCount":169,
-                  "userRatingCount":591
+                  "pressRating":3.666666,
+                  "pressReviewCount":21,
+                  "userRating":4.065576,
+                  "userReviewCount":95,
+                  "userRatingCount":583
                 }
               }
             },
             "version":{
-              "original":"false",
-              "code":6001,
-              "lang":6001,
-              "$":"FranÃ§ais"
+              "original":"true",
+              "code":6002,
+              "lang":6002,
+              "$":"Anglais"
             },
             "screenFormat":{
               "code":110002,
               "$":"NumÃ©rique"
             },
-            "display":"SÃ©ances du mercredi 30 janvier 2013 : 09:20, 11:15, 13:10, 14:55, 16:40, 18:30, 20:25, 22:20\u000d\u000aSÃ©ances du jeudi 31 janvier 2013 : 09:20, 11:15, 13:10, 14:55, 16:40, 18:30, 20:25, 22:20\u000d\u000aSÃ©ances du vendredi 1 fÃ©vrier 2013 : 09:20, 11:15, 13:10, 14:55, 16:40, 18:30, 20:25, 22:20\u000d\u000aSÃ©ances du samedi 2 fÃ©vrier 2013 : 09:20, 11:15, 13:10, 14:55, 16:40, 18:30, 20:25, 22:20\u000d\u000aSÃ©ances du dimanche 3 fÃ©vrier 2013 : 09:20, 11:15, 13:10, 14:55, 16:40, 18:30, 20:25, 22:20\u000d\u000aSÃ©ances du lundi 4 fÃ©vrier 2013 : 09:20, 11:15, 13:10, 14:55, 16:40, 18:30, 20:25, 22:20\u000d\u000aSÃ©ances du mardi 5 fÃ©vrier 2013 : 09:20, 11:15, 13:10, 14:55, 16:40, 22:20",
+            "display":"SÃ©ances du mercredi 30 janvier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSÃ©ances du jeudi 31 janvier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSÃ©ances du vendredi 1 fÃ©vrier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSÃ©ances du samedi 2 fÃ©vrier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSÃ©ances du dimanche 3 fÃ©vrier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSÃ©ances du lundi 4 fÃ©vrier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSÃ©ances du mardi 5 fÃ©vrier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10",
             "scr":[
               {
-                "d":"2013-04-30",
+                "d":"2013-04-27",
                 "t":[
                   {
-                    "code":956262220,
+                    "code":956252267,
                     "p":"0",
-                    "$":"09:20"
+                    "$":"09:25"
                   },
                   {
-                    "code":956262232,
+                    "code":956252260,
                     "p":"0",
-                    "$":"11:15"
+                    "$":"11:50"
                   },
                   {
-                    "code":956259319,
+                    "code":956252283,
                     "p":"0",
-                    "$":"13:10"
+                    "$":"14:30"
                   },
                   {
-                    "code":956259312,
+                    "code":956252276,
                     "p":"0",
-                    "$":"14:55"
+                    "$":"17:15"
                   },
                   {
-                    "code":956262202,
+                    "code":956252203,
                     "p":"0",
-                    "$":"16:40"
+                    "$":"19:45"
                   },
                   {
-                    "code":956262195,
+                    "code":956252196,
                     "p":"0",
-                    "$":"18:30"
-                  },
-                  {
-                    "code":956262216,
-                    "p":"0",
-                    "$":"20:25"
-                  },
-                  {
-                    "code":956262210,
-                    "p":"0",
-                    "$":"22:20"
-                  }
-                ]
-              },
-              {
-                "d":"2013-05-01",
-                "t":[
-                  {
-                    "code":956262229,
-                    "p":"0",
-                    "$":"09:20"
-                  },
-                  {
-                    "code":956262222,
-                    "p":"0",
-                    "$":"11:15"
-                  },
-                  {
-                    "code":956259320,
-                    "p":"0",
-                    "$":"13:10"
-                  },
-                  {
-                    "code":956259313,
-                    "p":"0",
-                    "$":"14:55"
-                  },
-                  {
-                    "code":956262203,
-                    "p":"0",
-                    "$":"16:40"
-                  },
-                  {
-                    "code":956262196,
-                    "p":"0",
-                    "$":"18:30"
-                  },
-                  {
-                    "code":956262214,
-                    "p":"0",
-                    "$":"20:25"
-                  },
-                  {
-                    "code":956262207,
-                    "p":"0",
-                    "$":"22:20"
+                    "$":"22:10"
                   }
                 ]
               },
@@ -496,74 +440,29 @@
                 "d":"2013-04-28",
                 "t":[
                   {
-                    "code":956262223,
+                    "code":956252272,
                     "p":"0",
-                    "$":"11:15"
+                    "$":"11:50"
                   },
                   {
-                    "code":956259321,
+                    "code":956252265,
                     "p":"0",
-                    "$":"13:10"
+                    "$":"14:30"
                   },
                   {
-                    "code":956259314,
+                    "code":956252284,
                     "p":"0",
-                    "$":"14:55"
+                    "$":"17:15"
                   },
                   {
-                    "code":956262200,
+                    "code":956252277,
                     "p":"0",
-                    "$":"16:40"
+                    "$":"19:45"
                   },
                   {
-                    "code":956262193,
+                    "code":956252204,
                     "p":"0",
-                    "$":"18:30"
-                  },
-                  {
-                    "code":956262211,
-                    "p":"0",
-                    "$":"20:25"
-                  },
-                  {
-                    "code":956262204,
-                    "p":"0",
-                    "$":"22:20"
-                  }
-                ]
-              },
-              {
-                "d":"2013-04-27",
-                "t":[
-                  {
-                    "code":956262218,
-                    "p":"0",
-                    "$":"09:20"
-                  },
-                  {
-                    "code":956259316,
-                    "p":"0",
-                    "$":"11:15"
-                  },
-                  {
-                    "code":956262234,
-                    "p":"0",
-                    "$":"13:10"
-                  },
-                  {
-                    "code":956262199,
-                    "p":"0",
-                    "$":"14:55"
-                  },
-                  {
-                    "code":956262192,
-                    "p":"0",
-                    "$":"16:40"
-                  },
-                  {
-                    "code":956262208,
-                    "p":"0",
-                    "$":"22:20"
+                    "$":"22:10"
                   }
                 ]
               },
@@ -571,44 +470,104 @@
                 "d":"2013-04-29",
                 "t":[
                   {
-                    "code":956262219,
+                    "code":956252268,
                     "p":"0",
-                    "$":"09:20"
+                    "$":"09:25"
                   },
                   {
-                    "code":956259317,
+                    "code":956252261,
                     "p":"0",
-                    "$":"11:15"
+                    "$":"11:50"
                   },
                   {
-                    "code":956262235,
+                    "code":956252273,
                     "p":"0",
-                    "$":"13:10"
+                    "$":"14:30"
                   },
                   {
-                    "code":956262217,
+                    "code":956252285,
                     "p":"0",
-                    "$":"14:55"
+                    "$":"17:15"
                   },
                   {
-                    "code":956262201,
+                    "code":956252278,
                     "p":"0",
-                    "$":"16:40"
+                    "$":"19:45"
                   },
                   {
-                    "code":956262194,
+                    "code":956252205,
                     "p":"0",
-                    "$":"18:30"
+                    "$":"22:10"
+                  }
+                ]
+              },
+              {
+                "d":"2013-04-30",
+                "t":[
+                  {
+                    "code":956252288,
+                    "p":"0",
+                    "$":"09:25"
                   },
                   {
-                    "code":956262215,
+                    "code":956252270,
                     "p":"0",
-                    "$":"20:25"
+                    "$":"11:50"
                   },
                   {
-                    "code":956262209,
+                    "code":956252263,
                     "p":"0",
-                    "$":"22:20"
+                    "$":"14:30"
+                  },
+                  {
+                    "code":956252286,
+                    "p":"0",
+                    "$":"17:15"
+                  },
+                  {
+                    "code":956252279,
+                    "p":"0",
+                    "$":"19:45"
+                  },
+                  {
+                    "code":956252206,
+                    "p":"0",
+                    "$":"22:10"
+                  }
+                ]
+              },
+              {
+                "d":"2013-05-01",
+                "t":[
+                  {
+                    "code":956252308,
+                    "p":"0",
+                    "$":"09:25"
+                  },
+                  {
+                    "code":956252271,
+                    "p":"0",
+                    "$":"11:50"
+                  },
+                  {
+                    "code":956252264,
+                    "p":"0",
+                    "$":"14:30"
+                  },
+                  {
+                    "code":956252287,
+                    "p":"0",
+                    "$":"17:15"
+                  },
+                  {
+                    "code":956252280,
+                    "p":"0",
+                    "$":"19:45"
+                  },
+                  {
+                    "code":956252207,
+                    "p":"0",
+                    "$":"22:10"
                   }
                 ]
               }
@@ -660,14 +619,14 @@
               }
             },
             "version":{
-              "original":"true",
+              "original":"false",
               "code":6002,
               "lang":6002,
               "$":"Anglais"
             },
             "screenFormat":{
               "code":110002,
-              "$":"NumÃ©rique"
+              "$":"3D"
             },
             "display":"SÃ©ances du mercredi 30 janvier 2013 : 09:20, 11:40, 13:50, 16:00, 18:10, 20:20, 22:30\u000d\u000aSÃ©ances du jeudi 31 janvier 2013 : 09:20, 11:40, 13:50, 16:00, 18:10, 20:20, 22:30\u000d\u000aSÃ©ances du vendredi 1 fÃ©vrier 2013 : 09:20, 11:40, 13:50, 16:00, 18:10, 20:20, 22:30\u000d\u000aSÃ©ances du samedi 2 fÃ©vrier 2013 : 09:20, 11:40, 13:50, 16:00, 18:10, 20:20, 22:30\u000d\u000aSÃ©ances du dimanche 3 fÃ©vrier 2013 : 09:20, 11:40, 13:50, 16:00, 18:10, 20:20, 22:30\u000d\u000aSÃ©ances du lundi 4 fÃ©vrier 2013 : 09:20, 11:40, 13:50, 16:00, 18:10, 20:20, 22:30\u000d\u000aSÃ©ances du mardi 5 fÃ©vrier 2013 : 09:20, 11:40, 13:50, 16:00, 18:10, 20:20, 22:30",
             "scr":[
@@ -1825,229 +1784,6 @@
                     "code":956254364,
                     "p":"0",
                     "$":"22:30"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "ticketing":"http:\/\/www.ugc.fr\/reservationIdentification.html?id=330170942115&part=all",
-            "preview":"false",
-            "releaseWeek":"true",
-            "onShow":{
-              "movie":{
-                "code":145397,
-                "title":"Happiness Therapy",
-                "castingShort":{
-                  "directors":"David O. Russell",
-                  "actors":"Bradley Cooper, Jennifer Lawrence, Robert De Niro, Jacki Weaver, Chris Tucker"
-                },
-                "release":{
-                  "releaseDate":"2013-01-30"
-                },
-                "runtime":7320,
-                "genre":[
-                  {
-                    "code":13002,
-                    "$":"ComÃ©die dramatique"
-                  }
-                ],
-                "poster":{
-                  "path":"\/medias\/nmedia\/18\/94\/09\/83\/20302958.jpg",
-                  "href":"http:\/\/images.allocine.fr\/medias\/nmedia\/18\/94\/09\/83\/20302958.jpg"
-                },
-                "trailer":{
-                  "code":19401816,
-                  "href":"http:\/\/www.allocine.fr\/blogvision\/19401816"
-                },
-                "statistics":{
-                  "pressRating":3.666666,
-                  "pressReviewCount":21,
-                  "userRating":4.065576,
-                  "userReviewCount":95,
-                  "userRatingCount":583
-                }
-              }
-            },
-            "version":{
-              "original":"true",
-              "code":6002,
-              "lang":6002,
-              "$":"Anglais"
-            },
-            "screenFormat":{
-              "code":110002,
-              "$":"NumÃ©rique"
-            },
-            "display":"SÃ©ances du mercredi 30 janvier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSÃ©ances du jeudi 31 janvier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSÃ©ances du vendredi 1 fÃ©vrier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSÃ©ances du samedi 2 fÃ©vrier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSÃ©ances du dimanche 3 fÃ©vrier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSÃ©ances du lundi 4 fÃ©vrier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSÃ©ances du mardi 5 fÃ©vrier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10",
-            "scr":[
-              {
-                "d":"2013-04-27",
-                "t":[
-                  {
-                    "code":956252267,
-                    "p":"0",
-                    "$":"09:25"
-                  },
-                  {
-                    "code":956252260,
-                    "p":"0",
-                    "$":"11:50"
-                  },
-                  {
-                    "code":956252283,
-                    "p":"0",
-                    "$":"14:30"
-                  },
-                  {
-                    "code":956252276,
-                    "p":"0",
-                    "$":"17:15"
-                  },
-                  {
-                    "code":956252203,
-                    "p":"0",
-                    "$":"19:45"
-                  },
-                  {
-                    "code":956252196,
-                    "p":"0",
-                    "$":"22:10"
-                  }
-                ]
-              },
-              {
-                "d":"2013-04-28",
-                "t":[
-                  {
-                    "code":956252272,
-                    "p":"0",
-                    "$":"11:50"
-                  },
-                  {
-                    "code":956252265,
-                    "p":"0",
-                    "$":"14:30"
-                  },
-                  {
-                    "code":956252284,
-                    "p":"0",
-                    "$":"17:15"
-                  },
-                  {
-                    "code":956252277,
-                    "p":"0",
-                    "$":"19:45"
-                  },
-                  {
-                    "code":956252204,
-                    "p":"0",
-                    "$":"22:10"
-                  }
-                ]
-              },
-              {
-                "d":"2013-04-29",
-                "t":[
-                  {
-                    "code":956252268,
-                    "p":"0",
-                    "$":"09:25"
-                  },
-                  {
-                    "code":956252261,
-                    "p":"0",
-                    "$":"11:50"
-                  },
-                  {
-                    "code":956252273,
-                    "p":"0",
-                    "$":"14:30"
-                  },
-                  {
-                    "code":956252285,
-                    "p":"0",
-                    "$":"17:15"
-                  },
-                  {
-                    "code":956252278,
-                    "p":"0",
-                    "$":"19:45"
-                  },
-                  {
-                    "code":956252205,
-                    "p":"0",
-                    "$":"22:10"
-                  }
-                ]
-              },
-              {
-                "d":"2013-04-30",
-                "t":[
-                  {
-                    "code":956252288,
-                    "p":"0",
-                    "$":"09:25"
-                  },
-                  {
-                    "code":956252270,
-                    "p":"0",
-                    "$":"11:50"
-                  },
-                  {
-                    "code":956252263,
-                    "p":"0",
-                    "$":"14:30"
-                  },
-                  {
-                    "code":956252286,
-                    "p":"0",
-                    "$":"17:15"
-                  },
-                  {
-                    "code":956252279,
-                    "p":"0",
-                    "$":"19:45"
-                  },
-                  {
-                    "code":956252206,
-                    "p":"0",
-                    "$":"22:10"
-                  }
-                ]
-              },
-              {
-                "d":"2013-05-01",
-                "t":[
-                  {
-                    "code":956252308,
-                    "p":"0",
-                    "$":"09:25"
-                  },
-                  {
-                    "code":956252271,
-                    "p":"0",
-                    "$":"11:50"
-                  },
-                  {
-                    "code":956252264,
-                    "p":"0",
-                    "$":"14:30"
-                  },
-                  {
-                    "code":956252287,
-                    "p":"0",
-                    "$":"17:15"
-                  },
-                  {
-                    "code":956252280,
-                    "p":"0",
-                    "$":"19:45"
-                  },
-                  {
-                    "code":956252207,
-                    "p":"0",
-                    "$":"22:10"
                   }
                 ]
               }
@@ -3657,7 +3393,7 @@
             "onShow":{
               "movie":{
                 "code":197427,
-                "title":"Rendez-vous Ã  Kiruna",
+                "title":"Rendez-vous à Kiruna",
                 "castingShort":{
                   "directors":"Anna Novion",
                   "actors":"Jean-Pierre Darroussin, Anastasios Soulis, Claes Ljungmark, Kim Bodnia, Judith Henry"
@@ -3930,7 +3666,7 @@
             "onShow":{
               "movie":{
                 "code":209796,
-                "title":"Mariage Ã  Mendoza",
+                "title":"Mariage à Mendoza",
                 "castingShort":{
                   "directors":"Edouard Deluc",
                   "actors":"Nicolas Duvauchelle, Philippe Rebbot, Benjamin Biolay, Gustavo Kamenetzky, Paloma Contreras"

@@ -1,26 +1,26 @@
+var d = new Date();
+var minutes = d.getMinutes(),
+    hours = d.getHours(),
+    month = Number(d.getMonth()+1),
+    day = d.getDate();
+
+if (Number(d.getMinutes()) < 10)  minutes = '0' + minutes;
+if (Number(d.getHours()) < 10)    hours =   '0' + hours;
+if (Number(d.getDate()) < 10)     day =     '0' + day;
+if (Number(d.getMonth()+1) < 10)  month =   '0' + month;
+
+currentHours = hours + ':' + minutes;
+currentDate  = '2013-05-01';
+//currentDate  = d.getFullYear() + '-' + month + '-' + day;
+
+
 $(document).ready(function() {
-
-
   var theaters = 'C0159,C0053';
   //loadData('theaters='+ theaters, 'theaters');
 
   $.getJSON("allocine.json", function(data){
     loadTemplate('theaters', data);
   });
-
-  var d = new Date();
-  var minutes = d.getMinutes(),
-      hours = d.getHours(),
-      month = Number(d.getMonth()+1),
-      day = d.getDate();
-
-  if (Number(d.getMinutes()) < 10)  minutes = '0' + minutes;
-  if (Number(d.getHours()) < 10)    hours =   '0' + hours;
-  if (Number(d.getDate()) < 10)     day =     '0' + day;
-  if (Number(d.getMonth()+1) < 10)  month =   '0' + month;
-
-  localStorage.setItem('hours', hours + ':' + minutes);
-  localStorage.setItem('date', d.getFullYear() + '-' + month + '-' + day);
 });
 
 
@@ -55,15 +55,10 @@ function isSoon(end) {
       }
 
     } else {
-      
       if(!times[i].className.match(/\bover\b/)) {
-
-        if(waiting  <= 7 * 60)
-          times[i].style.backgroundColor = '#FF7260';
-        else if(waiting  <= 35 * 60)
-          times[i].style.backgroundColor = '#FFAF60';
-        else if(waiting  <= 60 * 60)
-          times[i].style.backgroundColor = '#48BF67';
+        if      (waiting  <= 7 * 60)  times[i].style.backgroundColor = '#FF7260';
+        else if(waiting  <= 35 * 60)  times[i].style.backgroundColor = '#FFAF60';
+        else if(waiting  <= 60 * 60)  times[i].style.backgroundColor = '#48BF67';
 
         if(waiting  <= 80 * 60)
           $(times[i]).find('.timeLeft').text('(' + secToMin(waiting) + 'mn)');
@@ -80,13 +75,9 @@ function timeToSec(time) {
 }
 
 function secToTime(secs) {
-  var hours = Math.floor(secs / (60 * 60));
-  var divisor_for_minutes = secs % (60 * 60);
-  var minutes = Math.floor(divisor_for_minutes / 60);
-
-  if (minutes < 10)
-    minutes = '0' + minutes;
-
+  var hours   = Math.floor(secs / (60 * 60)),
+      minutes = Math.floor(secs % (60 * 60) / 60);
+  if (minutes < 10) minutes = '0' + minutes;
   return hours + 'h' + minutes;
 }
 
@@ -95,33 +86,33 @@ function secToMin(secs) {
 }
 
 
-
 function sessionStart(start, pause) {
-  var startA = start.split(':');
-
-  var hours = Number(startA[0]);
-  var minutes = Number(startA[1]) + Number(pause);
+  var startA  = start.split(':'),
+      hours   = Number(startA[0]),
+      minutes = Number(startA[1]) + Number(pause);
+  
   if (minutes >= 60) {
     hours++;
     minutes -= 60;
   }
-  if (minutes < 10)
+  else if (minutes < 10)
     minutes = '0' + minutes;
 
   return hours + ':' + minutes;
 }
 
 function sessionEnd(start, duration) {
-  var startA = start.split(':');
-  var durationA = duration.split('h');
+  var startA    = start.split(':'),
+      durationA = duration.split('h'),
+      hours     = Number(startA[0]) + Number(durationA[0]),
+      minutes   = Number(startA[1]) + Number(durationA[1]);
 
-  var hours = Number(startA[0]) + Number(durationA[0]);
-  var minutes = Number(startA[1]) + Number(durationA[1]);
   if (minutes > 60) {
     hours++;
     minutes -= 60;
   }
-  if (minutes < 10)
+
+  else if (minutes < 10)
     minutes = '0' + minutes;
 
   return hours + ':' + minutes;
@@ -144,7 +135,7 @@ function loadData(path, template) {
 function loadTemplate(templateName, templateInput) {
   var source;
   var template;
-  var path = templateName + '.html';
+  var path = 'tpl/' + templateName + '.html';
   $.ajax({
     url: path,
     cache: false,
@@ -159,8 +150,8 @@ function loadTemplate(templateName, templateInput) {
 };
 
 function drawShow(start, duration, title) {
-  var realStart = (timeToMin(start) - 540) * 100 / (1500 - 540); // timeline starts at 9am
-  var realDuration = Number(duration) * 100 / (1500 - 540);
+  var realStart    = (timeToMin(start) - 540) * 100 / (1500 - 540), // timeline starts at 9am
+      realDuration = Number(duration) * 100 / (1500 - 540);
   $('.timeline').append('<div class="show" style="width:' + realDuration + '%; left: ' + realStart + '%;"><span class="breath">' + title + '</span></div>');
 }
 
@@ -170,42 +161,34 @@ function timeToMin(time) {
 }
 
 Handlebars.registerHelper('notPreview', function(status, options) {
-  if(status == 'false') {
+  if(status == 'false')
     return options.fn(this);
-  }
   return options.inverse(this);
 });
 
 Handlebars.registerHelper('isGood', function(rate) {
-  if (rate >= 3.9)
-    return '<3';
-  if (rate > 2.7)
-    return ':)';
-  if (rate > 2)
-    return ':/';
-  else
-    return ':(';
+  if      (rate >= 3.9) return '<3';
+  else if (rate > 2.7)  return ':)';
+  else if (rate > 2)    return ':/';
+  else                  return ':(';
   
 });
 
 Handlebars.registerHelper('isToday', function(date, options) {
-  if(date == localStorage.getItem('date')) {
+  if(date == currentDate)
     return options.fn(this);
-  }
   return options.inverse(this);
 });
 
 Handlebars.registerHelper('is3D', function(v1, options) {
-  if(v1 == '3D') {
+  if(v1 == '3D')
     return options.fn(this);
-  }
   return options.inverse(this);
 });
 
 Handlebars.registerHelper('VF', function(v1, options) {
-  if(v1 == 'false') {
+  if(v1 == 'false')
     return options.fn(this);
-  }
   return options.inverse(this);
 });
 
