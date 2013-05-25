@@ -41,7 +41,7 @@
                 "title":"ArrÃªtez-moi",
                 "castingShort":{
                   "directors":"Jean-Paul Lilienfeld",
-                  "actors":"Sophie Marceau, Miou-Miou, Marc BarbÃ©, Yann EbongÃ©, ValÃ©rie Bodson"
+                  "actors":"Sophie Marceau, Miou-Miou, Marc Barbé, Yann Ebongé, Valérie Bodson"
                 },
                 "release":{
                   "releaseDate":"2013-02-06"
@@ -71,9 +71,9 @@
             },
             "screenFormat":{
               "code":110002,
-              "$":"NumÃ©rique"
+              "$":"Numérique"
             },
-            "display":"SÃ©ances du mardi 5 fÃ©vrier 2013 : 20:15",
+            "display":"Séances du mardi 5 février 2013 : 20:15",
             "scr":[
               {
                 "d":"2013-04-27",
@@ -131,9 +131,9 @@
             },
             "screenFormat":{
               "code":110002,
-              "$":"NumÃ©rique"
+              "$":"Numérique"
             },
-            "display":"SÃ©ances du lundi 4 fÃ©vrier 2013 : 20:15",
+            "display":"Séances du lundi 4 février 2013 : 20:15",
             "scr":[
               {
                 "d":"2013-04-29",
@@ -200,9 +200,9 @@
             },
             "screenFormat":{
               "code":110002,
-              "$":"NumÃ©rique"
+              "$":"Numérique"
             },
-            "display":"SÃ©ances du mercredi 30 janvier 2013 : 09:20, 12:25, 15:30, 18:35, 21:40\u000d\u000aSÃ©ances du jeudi 31 janvier 2013 : 09:20, 12:25, 15:30, 18:35, 21:40\u000d\u000aSÃ©ances du vendredi 1 fÃ©vrier 2013 : 09:20, 12:25, 15:30, 18:35, 21:40\u000d\u000aSÃ©ances du samedi 2 fÃ©vrier 2013 : 09:20, 12:25, 15:30, 18:35, 21:40\u000d\u000aSÃ©ances du dimanche 3 fÃ©vrier 2013 : 09:20, 12:25, 15:30, 18:35, 21:40\u000d\u000aSÃ©ances du lundi 4 fÃ©vrier 2013 : 09:20, 12:25, 15:30, 18:35, 21:40\u000d\u000aSÃ©ances du mardi 5 fÃ©vrier 2013 : 09:20, 12:25, 15:30, 18:35, 21:40",
+            "display":"Séances du mercredi 30 janvier 2013 : 09:20, 12:25, 15:30, 18:35, 21:40\u000d\u000aSéances du jeudi 31 janvier 2013 : 09:20, 12:25, 15:30, 18:35, 21:40\u000d\u000aSéances du vendredi 1 février 2013 : 09:20, 12:25, 15:30, 18:35, 21:40\u000d\u000aSéances du samedi 2 février 2013 : 09:20, 12:25, 15:30, 18:35, 21:40\u000d\u000aSéances du dimanche 3 février 2013 : 09:20, 12:25, 15:30, 18:35, 21:40\u000d\u000aSéances du lundi 4 février 2013 : 09:20, 12:25, 15:30, 18:35, 21:40\u000d\u000aSéances du mardi 5 février 2013 : 09:20, 12:25, 15:30, 18:35, 21:40",
             "scr":[
               {
                 "d":"2013-04-30",
@@ -369,7 +369,7 @@
                 "genre":[
                   {
                     "code":13002,
-                    "$":"ComÃ©die dramatique"
+                    "$":"Comédie dramatique"
                   }
                 ],
                 "poster":{
@@ -397,9 +397,9 @@
             },
             "screenFormat":{
               "code":110002,
-              "$":"NumÃ©rique"
+              "$":"Numérique"
             },
-            "display":"SÃ©ances du mercredi 30 janvier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSÃ©ances du jeudi 31 janvier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSÃ©ances du vendredi 1 fÃ©vrier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSÃ©ances du samedi 2 fÃ©vrier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSÃ©ances du dimanche 3 fÃ©vrier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSÃ©ances du lundi 4 fÃ©vrier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSÃ©ances du mardi 5 fÃ©vrier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10",
+            "display":"Séances du mercredi 30 janvier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSéances du jeudi 31 janvier 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSéances du vendredi 1 février 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSéances du samedi 2 février 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSéances du dimanche 3 février 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSéances du lundi 4 février 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10\u000d\u000aSéances du mardi 5 février 2013 : 09:25, 11:50, 14:30, 17:15, 19:45, 22:10",
             "scr":[
               {
                 "d":"2013-04-27",
@@ -598,7 +598,7 @@
                 "movieCertificate":{
                   "certificate":{
                     "code":14035,
-                    "$":"Avertissement : des scÃ¨nes, des propos ou des images peuvent heurter la sensibilitÃ© des spectateurs"
+                    "$":"Avertissement : des scÃ¨nes, des propos ou des images peuvent heurter la sensibilité des spectateurs"
                   }
                 },
                 "poster":{
@@ -628,7 +628,7 @@
               "code":110002,
               "$":"3D"
             },
-            "display":"SÃ©ances du mercredi 30 janvier 2013 : 09:20, 11:40, 13:50, 16:00, 18:10, 20:20, 22:30\u000d\u000aSÃ©ances du jeudi 31 janvier 2013 : 09:20, 11:40, 13:50, 16:00, 18:10, 20:20, 22:30\u000d\u000aSÃ©ances du vendredi 1 fÃ©vrier 2013 : 09:20, 11:40, 13:50, 16:00, 18:10, 20:20, 22:30\u000d\u000aSÃ©ances du samedi 2 fÃ©vrier 2013 : 09:20, 11:40, 13:50, 16:00, 18:10, 20:20, 22:30\u000d\u000aSÃ©ances du dimanche 3 fÃ©vrier 2013 : 09:20, 11:40, 13:50, 16:00, 18:10, 20:20, 22:30\u000d\u000aSÃ©ances du lundi 4 fÃ©vrier 2013 : 09:20, 11:40, 13:50, 16:00, 18:10, 20:20, 22:30\u000d\u000aSÃ©ances du mardi 5 fÃ©vrier 2013 : 09:20, 11:40, 13:50, 16:00, 18:10, 20:20, 22:30",
+            "display":"Séances du mercredi 30 janvier 2013 : 09:20, 11:40, 13:50, 16:00, 18:10, 20:20, 22:30\u000d\u000aSéances du jeudi 31 janvier 2013 : 09:20, 11:40, 13:50, 16:00, 18:10, 20:20, 22:30\u000d\u000aSéances du vendredi 1 février 2013 : 09:20, 11:40, 13:50, 16:00, 18:10, 20:20, 22:30\u000d\u000aSéances du samedi 2 février 2013 : 09:20, 11:40, 13:50, 16:00, 18:10, 20:20, 22:30\u000d\u000aSéances du dimanche 3 février 2013 : 09:20, 11:40, 13:50, 16:00, 18:10, 20:20, 22:30\u000d\u000aSéances du lundi 4 février 2013 : 09:20, 11:40, 13:50, 16:00, 18:10, 20:20, 22:30\u000d\u000aSéances du mardi 5 février 2013 : 09:20, 11:40, 13:50, 16:00, 18:10, 20:20, 22:30",
             "scr":[
               {
                 "d":"2013-05-01",
@@ -846,7 +846,7 @@
                 "genre":[
                   {
                     "code":13005,
-                    "$":"ComÃ©die"
+                    "$":"Comédie"
                   }
                 ],
                 "poster":{
@@ -874,9 +874,9 @@
             },
             "screenFormat":{
               "code":110002,
-              "$":"NumÃ©rique"
+              "$":"Numérique"
             },
-            "display":"SÃ©ances du mercredi 30 janvier 2013 : 09:10, 10:50, 12:30, 14:10, 15:50, 17:30, 19:10, 20:50, 22:30\u000d\u000aSÃ©ances du jeudi 31 janvier 2013 : 09:10, 10:50, 12:30, 14:10, 15:50, 17:30, 19:10, 20:50, 22:30\u000d\u000aSÃ©ances du vendredi 1 fÃ©vrier 2013 : 09:10, 10:50, 12:30, 14:10, 15:50, 17:30, 19:10, 20:50, 22:30\u000d\u000aSÃ©ances du samedi 2 fÃ©vrier 2013 : 09:10, 10:50, 12:30, 14:10, 15:50, 17:30, 19:10, 20:50, 22:30\u000d\u000aSÃ©ances du dimanche 3 fÃ©vrier 2013 : 09:10, 10:50, 12:30, 14:10, 15:50, 17:30, 19:10, 20:50, 22:30\u000d\u000aSÃ©ances du lundi 4 fÃ©vrier 2013 : 09:10, 10:50, 12:30, 14:10, 15:50, 17:30, 19:10, 20:50, 22:30\u000d\u000aSÃ©ances du mardi 5 fÃ©vrier 2013 : 09:10, 10:50, 12:30, 14:10, 15:50, 17:30, 19:10, 20:50, 22:30",
+            "display":"Séances du mercredi 30 janvier 2013 : 09:10, 10:50, 12:30, 14:10, 15:50, 17:30, 19:10, 20:50, 22:30\u000d\u000aSéances du jeudi 31 janvier 2013 : 09:10, 10:50, 12:30, 14:10, 15:50, 17:30, 19:10, 20:50, 22:30\u000d\u000aSéances du vendredi 1 février 2013 : 09:10, 10:50, 12:30, 14:10, 15:50, 17:30, 19:10, 20:50, 22:30\u000d\u000aSéances du samedi 2 février 2013 : 09:10, 10:50, 12:30, 14:10, 15:50, 17:30, 19:10, 20:50, 22:30\u000d\u000aSéances du dimanche 3 février 2013 : 09:10, 10:50, 12:30, 14:10, 15:50, 17:30, 19:10, 20:50, 22:30\u000d\u000aSéances du lundi 4 février 2013 : 09:10, 10:50, 12:30, 14:10, 15:50, 17:30, 19:10, 20:50, 22:30\u000d\u000aSéances du mardi 5 février 2013 : 09:10, 10:50, 12:30, 14:10, 15:50, 17:30, 19:10, 20:50, 22:30",
             "scr":[
               {
                 "d":"2013-04-27",
@@ -1176,9 +1176,9 @@
             },
             "screenFormat":{
               "code":110002,
-              "$":"NumÃ©rique"
+              "$":"Numérique"
             },
-            "display":"SÃ©ances du mercredi 30 janvier 2013 : 09:30, 13:25, 16:15, 19:05, 21:55\u000d\u000aSÃ©ances du jeudi 31 janvier 2013 : 09:30, 13:25, 16:15, 19:05, 21:55\u000d\u000aSÃ©ances du vendredi 1 fÃ©vrier 2013 : 09:30, 13:25, 16:15, 19:05, 21:55\u000d\u000aSÃ©ances du samedi 2 fÃ©vrier 2013 : 09:30, 13:25, 16:15, 19:05, 21:55\u000d\u000aSÃ©ances du dimanche 3 fÃ©vrier 2013 : 09:30, 13:25, 16:15, 19:05, 21:55\u000d\u000aSÃ©ances du lundi 4 fÃ©vrier 2013 : 09:30, 13:25, 16:15, 19:05, 21:55\u000d\u000aSÃ©ances du mardi 5 fÃ©vrier 2013 : 09:30, 13:25, 16:15, 19:05, 21:55",
+            "display":"Séances du mercredi 30 janvier 2013 : 09:30, 13:25, 16:15, 19:05, 21:55\u000d\u000aSéances du jeudi 31 janvier 2013 : 09:30, 13:25, 16:15, 19:05, 21:55\u000d\u000aSéances du vendredi 1 février 2013 : 09:30, 13:25, 16:15, 19:05, 21:55\u000d\u000aSéances du samedi 2 février 2013 : 09:30, 13:25, 16:15, 19:05, 21:55\u000d\u000aSéances du dimanche 3 février 2013 : 09:30, 13:25, 16:15, 19:05, 21:55\u000d\u000aSéances du lundi 4 février 2013 : 09:30, 13:25, 16:15, 19:05, 21:55\u000d\u000aSéances du mardi 5 février 2013 : 09:30, 13:25, 16:15, 19:05, 21:55",
             "scr":[
               {
                 "d":"2013-05-01",
@@ -1356,7 +1356,7 @@
                 "movieCertificate":{
                   "certificate":{
                     "code":14035,
-                    "$":"Avertissement : des scÃ¨nes, des propos ou des images peuvent heurter la sensibilitÃ© des spectateurs"
+                    "$":"Avertissement : des scÃ¨nes, des propos ou des images peuvent heurter la sensibilité des spectateurs"
                   }
                 },
                 "poster":{
@@ -1384,9 +1384,9 @@
             },
             "screenFormat":{
               "code":110002,
-              "$":"NumÃ©rique"
+              "$":"Numérique"
             },
-            "display":"SÃ©ances du mercredi 30 janvier 2013 : 09:30, 12:30, 15:45, 18:50, 21:50\u000d\u000aSÃ©ances du jeudi 31 janvier 2013 : 09:30, 12:30, 15:45, 18:50, 21:50\u000d\u000aSÃ©ances du vendredi 1 fÃ©vrier 2013 : 09:30, 12:30, 15:45, 18:50, 21:50\u000d\u000aSÃ©ances du samedi 2 fÃ©vrier 2013 : 09:30, 12:30, 15:45, 18:50, 21:50\u000d\u000aSÃ©ances du dimanche 3 fÃ©vrier 2013 : 09:30, 12:30, 15:45, 18:50, 21:50\u000d\u000aSÃ©ances du lundi 4 fÃ©vrier 2013 : 09:30, 12:30, 15:45, 18:50, 21:50\u000d\u000aSÃ©ances du mardi 5 fÃ©vrier 2013 : 09:30, 12:30, 15:45, 18:50, 21:50",
+            "display":"Séances du mercredi 30 janvier 2013 : 09:30, 12:30, 15:45, 18:50, 21:50\u000d\u000aSéances du jeudi 31 janvier 2013 : 09:30, 12:30, 15:45, 18:50, 21:50\u000d\u000aSéances du vendredi 1 février 2013 : 09:30, 12:30, 15:45, 18:50, 21:50\u000d\u000aSéances du samedi 2 février 2013 : 09:30, 12:30, 15:45, 18:50, 21:50\u000d\u000aSéances du dimanche 3 février 2013 : 09:30, 12:30, 15:45, 18:50, 21:50\u000d\u000aSéances du lundi 4 février 2013 : 09:30, 12:30, 15:45, 18:50, 21:50\u000d\u000aSéances du mardi 5 février 2013 : 09:30, 12:30, 15:45, 18:50, 21:50",
             "scr":[
               {
                 "d":"2013-04-29",
@@ -1545,7 +1545,7 @@
                 "title":"Intersections",
                 "castingShort":{
                   "directors":"David Marconi",
-                  "actors":"Roschdy Zem, Frank Grillo, Jaimie Alexander, Marie-JosÃ©e Croze, Moussa Maaskri"
+                  "actors":"Roschdy Zem, Frank Grillo, Jaimie Alexander, Marie-Josée Croze, Moussa Maaskri"
                 },
                 "release":{
                   "releaseDate":"2013-01-30"
@@ -1588,9 +1588,9 @@
             },
             "screenFormat":{
               "code":110002,
-              "$":"NumÃ©rique"
+              "$":"Numérique"
             },
-            "display":"SÃ©ances du mercredi 30 janvier 2013 : 09:20, 11:30, 14:00, 16:10, 18:15, 20:25, 22:30\u000d\u000aSÃ©ances du jeudi 31 janvier 2013 : 09:20, 11:30, 14:00, 16:10, 18:15, 20:25, 22:30\u000d\u000aSÃ©ances du vendredi 1 fÃ©vrier 2013 : 09:20, 11:30, 14:00, 16:10, 18:15, 20:25, 22:30\u000d\u000aSÃ©ances du samedi 2 fÃ©vrier 2013 : 09:20, 11:30, 14:00, 16:10, 18:15, 20:25, 22:30\u000d\u000aSÃ©ances du dimanche 3 fÃ©vrier 2013 : 09:20, 11:30, 14:00, 16:10, 18:15, 20:25, 22:30\u000d\u000aSÃ©ances du lundi 4 fÃ©vrier 2013 : 09:20, 11:30, 14:00, 16:10, 18:15, 20:25, 22:30\u000d\u000aSÃ©ances du mardi 5 fÃ©vrier 2013 : 09:20, 11:30, 14:00, 16:10, 18:15, 20:25, 22:30",
+            "display":"Séances du mercredi 30 janvier 2013 : 09:20, 11:30, 14:00, 16:10, 18:15, 20:25, 22:30\u000d\u000aSéances du jeudi 31 janvier 2013 : 09:20, 11:30, 14:00, 16:10, 18:15, 20:25, 22:30\u000d\u000aSéances du vendredi 1 février 2013 : 09:20, 11:30, 14:00, 16:10, 18:15, 20:25, 22:30\u000d\u000aSéances du samedi 2 février 2013 : 09:20, 11:30, 14:00, 16:10, 18:15, 20:25, 22:30\u000d\u000aSéances du dimanche 3 février 2013 : 09:20, 11:30, 14:00, 16:10, 18:15, 20:25, 22:30\u000d\u000aSéances du lundi 4 février 2013 : 09:20, 11:30, 14:00, 16:10, 18:15, 20:25, 22:30\u000d\u000aSéances du mardi 5 février 2013 : 09:20, 11:30, 14:00, 16:10, 18:15, 20:25, 22:30",
             "scr":[
               {
                 "d":"2013-04-27",
@@ -1799,7 +1799,7 @@
                 "title":"Pas très normales activités",
                 "castingShort":{
                   "directors":"Maurice Barthélémy",
-                  "actors":"Norman Thavaud, Stefi Celma, Maurice BarthÃ©lÃ©my, Rufus, François Bureloup"
+                  "actors":"Norman Thavaud, Stefi Celma, Maurice Barthélémy, Rufus, François Bureloup"
                 },
                 "release":{
                   "releaseDate":"2013-01-30"
@@ -1808,7 +1808,7 @@
                 "genre":[
                   {
                     "code":13005,
-                    "$":"ComÃ©die"
+                    "$":"Comédie"
                   }
                 ],
                 "poster":{
@@ -1836,9 +1836,9 @@
             },
             "screenFormat":{
               "code":110002,
-              "$":"NumÃ©rique"
+              "$":"Numérique"
             },
-            "display":"SÃ©ances du mercredi 30 janvier 2013 : 09:15, 10:55, 12:35, 14:15, 15:55, 17:35, 19:15, 20:55, 22:35\u000d\u000aSÃ©ances du jeudi 31 janvier 2013 : 09:15, 10:55, 12:35, 14:15, 15:55, 17:35, 19:15, 20:55, 22:35\u000d\u000aSÃ©ances du vendredi 1 fÃ©vrier 2013 : 09:15, 10:55, 12:35, 14:15, 15:55, 17:35, 19:15, 20:55, 22:35\u000d\u000aSÃ©ances du samedi 2 fÃ©vrier 2013 : 09:15, 10:55, 12:35, 14:15, 15:55, 17:35, 19:15, 20:55, 22:35\u000d\u000aSÃ©ances du dimanche 3 fÃ©vrier 2013 : 09:15, 10:55, 12:35, 14:15, 15:55, 17:35, 19:15, 20:55, 22:35\u000d\u000aSÃ©ances du lundi 4 fÃ©vrier 2013 : 09:15, 10:55, 12:35, 14:15, 15:55, 17:35, 19:15, 20:55, 22:35\u000d\u000aSÃ©ances du mardi 5 fÃ©vrier 2013 : 09:15, 10:55, 12:35, 14:15, 15:55, 17:35, 19:15, 20:55, 22:35",
+            "display":"Séances du mercredi 30 janvier 2013 : 09:15, 10:55, 12:35, 14:15, 15:55, 17:35, 19:15, 20:55, 22:35\u000d\u000aSéances du jeudi 31 janvier 2013 : 09:15, 10:55, 12:35, 14:15, 15:55, 17:35, 19:15, 20:55, 22:35\u000d\u000aSéances du vendredi 1 février 2013 : 09:15, 10:55, 12:35, 14:15, 15:55, 17:35, 19:15, 20:55, 22:35\u000d\u000aSéances du samedi 2 février 2013 : 09:15, 10:55, 12:35, 14:15, 15:55, 17:35, 19:15, 20:55, 22:35\u000d\u000aSéances du dimanche 3 février 2013 : 09:15, 10:55, 12:35, 14:15, 15:55, 17:35, 19:15, 20:55, 22:35\u000d\u000aSéances du lundi 4 février 2013 : 09:15, 10:55, 12:35, 14:15, 15:55, 17:35, 19:15, 20:55, 22:35\u000d\u000aSéances du mardi 5 février 2013 : 09:15, 10:55, 12:35, 14:15, 15:55, 17:35, 19:15, 20:55, 22:35",
             "scr":[
               {
                 "d":"2013-05-01",
@@ -2101,7 +2101,7 @@
                 "genre":[
                   {
                     "code":13005,
-                    "$":"ComÃ©die"
+                    "$":"Comédie"
                   }
                 ],
                 "poster":{
@@ -2129,9 +2129,9 @@
             },
             "screenFormat":{
               "code":110002,
-              "$":"NumÃ©rique"
+              "$":"Numérique"
             },
-            "display":"SÃ©ances du mercredi 30 janvier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSÃ©ances du jeudi 31 janvier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSÃ©ances du vendredi 1 fÃ©vrier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSÃ©ances du samedi 2 fÃ©vrier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSÃ©ances du dimanche 3 fÃ©vrier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSÃ©ances du lundi 4 fÃ©vrier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSÃ©ances du mardi 5 fÃ©vrier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35",
+            "display":"Séances du mercredi 30 janvier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSéances du jeudi 31 janvier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSéances du vendredi 1 février 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSéances du samedi 2 février 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSéances du dimanche 3 février 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSéances du lundi 4 février 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSéances du mardi 5 février 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35",
             "scr":[
               {
                 "d":"2013-04-30",
@@ -2364,7 +2364,7 @@
                 "code":196581,
                 "title":"Cookie",
                 "castingShort":{
-                  "directors":"LÃ©a Fazer",
+                  "directors":"Léa Fazer",
                   "actors":"Alice Taglioni, Virginie Efira, Mehdi Nebbou, Scali Delpeyrat, Meriem Serbah"
                 },
                 "release":{
@@ -2374,7 +2374,7 @@
                 "genre":[
                   {
                     "code":13002,
-                    "$":"ComÃ©die dramatique"
+                    "$":"Comédie dramatique"
                   }
                 ],
                 "poster":{
@@ -2402,9 +2402,9 @@
             },
             "screenFormat":{
               "code":110002,
-              "$":"NumÃ©rique"
+              "$":"Numérique"
             },
-            "display":"SÃ©ances du mercredi 30 janvier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSÃ©ances du jeudi 31 janvier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSÃ©ances du vendredi 1 fÃ©vrier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSÃ©ances du samedi 2 fÃ©vrier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSÃ©ances du dimanche 3 fÃ©vrier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSÃ©ances du lundi 4 fÃ©vrier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSÃ©ances du mardi 5 fÃ©vrier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35",
+            "display":"Séances du mercredi 30 janvier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSéances du jeudi 31 janvier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSéances du vendredi 1 février 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSéances du samedi 2 février 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSéances du dimanche 3 février 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSéances du lundi 4 février 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSéances du mardi 5 février 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35",
             "scr":[
               {
                 "d":"2013-04-27",
@@ -2647,7 +2647,7 @@
                 "genre":[
                   {
                     "code":13005,
-                    "$":"ComÃ©die"
+                    "$":"Comédie"
                   },
                   {
                     "code":13025,
@@ -2657,7 +2657,7 @@
                 "movieCertificate":{
                   "certificate":{
                     "code":14035,
-                    "$":"Avertissement : des scÃ¨nes, des propos ou des images peuvent heurter la sensibilitÃ© des spectateurs"
+                    "$":"Avertissement : des scÃ¨nes, des propos ou des images peuvent heurter la sensibilité des spectateurs"
                   }
                 },
                 "poster":{
@@ -2685,9 +2685,9 @@
             },
             "screenFormat":{
               "code":110002,
-              "$":"NumÃ©rique"
+              "$":"Numérique"
             },
-            "display":"SÃ©ances du mercredi 30 janvier 2013 : 09:15, 11:25, 13:35, 15:50, 18:10, 20:20, 22:30\u000d\u000aSÃ©ances du jeudi 31 janvier 2013 : 09:15, 11:25, 13:35, 15:50, 18:10, 20:20, 22:30\u000d\u000aSÃ©ances du vendredi 1 fÃ©vrier 2013 : 09:15, 11:25, 13:35, 15:50, 18:10, 20:20, 22:30\u000d\u000aSÃ©ances du samedi 2 fÃ©vrier 2013 : 09:15, 11:25, 13:35, 15:50, 18:10, 20:20, 22:30\u000d\u000aSÃ©ances du dimanche 3 fÃ©vrier 2013 : 09:15, 11:25, 13:35, 15:50, 18:10, 20:20, 22:30\u000d\u000aSÃ©ances du lundi 4 fÃ©vrier 2013 : 09:15, 11:25, 13:35, 15:50, 18:10, 20:20, 22:30\u000d\u000aSÃ©ances du mardi 5 fÃ©vrier 2013 : 09:15, 11:25, 13:35, 15:50, 18:10, 20:20, 22:30",
+            "display":"Séances du mercredi 30 janvier 2013 : 09:15, 11:25, 13:35, 15:50, 18:10, 20:20, 22:30\u000d\u000aSéances du jeudi 31 janvier 2013 : 09:15, 11:25, 13:35, 15:50, 18:10, 20:20, 22:30\u000d\u000aSéances du vendredi 1 février 2013 : 09:15, 11:25, 13:35, 15:50, 18:10, 20:20, 22:30\u000d\u000aSéances du samedi 2 février 2013 : 09:15, 11:25, 13:35, 15:50, 18:10, 20:20, 22:30\u000d\u000aSéances du dimanche 3 février 2013 : 09:15, 11:25, 13:35, 15:50, 18:10, 20:20, 22:30\u000d\u000aSéances du lundi 4 février 2013 : 09:15, 11:25, 13:35, 15:50, 18:10, 20:20, 22:30\u000d\u000aSéances du mardi 5 février 2013 : 09:15, 11:25, 13:35, 15:50, 18:10, 20:20, 22:30",
             "scr":[
               {
                 "d":"2013-04-28",
@@ -2905,7 +2905,7 @@
                 "genre":[
                   {
                     "code":13005,
-                    "$":"ComÃ©die"
+                    "$":"Comédie"
                   },
                   {
                     "code":13008,
@@ -2937,9 +2937,9 @@
             },
             "screenFormat":{
               "code":110002,
-              "$":"NumÃ©rique"
+              "$":"Numérique"
             },
-            "display":"SÃ©ances du mercredi 30 janvier 2013 : 09:10, 11:25, 13:40, 15:55, 18:10, 20:25, 22:40\u000d\u000aSÃ©ances du jeudi 31 janvier 2013 : 09:10, 11:25, 13:40, 15:55, 22:40\u000d\u000aSÃ©ances du vendredi 1 fÃ©vrier 2013 : 09:10, 11:25, 13:40, 15:55, 18:10, 20:25, 22:40\u000d\u000aSÃ©ances du samedi 2 fÃ©vrier 2013 : 09:10, 11:25, 13:40, 15:55, 18:10, 20:25, 22:40\u000d\u000aSÃ©ances du dimanche 3 fÃ©vrier 2013 : 09:10, 11:25, 13:40, 15:55, 18:10, 20:25, 22:40\u000d\u000aSÃ©ances du lundi 4 fÃ©vrier 2013 : 09:10, 11:25, 13:40, 15:55, 18:10, 20:25, 22:40\u000d\u000aSÃ©ances du mardi 5 fÃ©vrier 2013 : 09:10, 11:25, 13:40, 15:55, 18:10, 20:25, 22:40",
+            "display":"Séances du mercredi 30 janvier 2013 : 09:10, 11:25, 13:40, 15:55, 18:10, 20:25, 22:40\u000d\u000aSéances du jeudi 31 janvier 2013 : 09:10, 11:25, 13:40, 15:55, 22:40\u000d\u000aSéances du vendredi 1 février 2013 : 09:10, 11:25, 13:40, 15:55, 18:10, 20:25, 22:40\u000d\u000aSéances du samedi 2 février 2013 : 09:10, 11:25, 13:40, 15:55, 18:10, 20:25, 22:40\u000d\u000aSéances du dimanche 3 février 2013 : 09:10, 11:25, 13:40, 15:55, 18:10, 20:25, 22:40\u000d\u000aSéances du lundi 4 février 2013 : 09:10, 11:25, 13:40, 15:55, 18:10, 20:25, 22:40\u000d\u000aSéances du mardi 5 février 2013 : 09:10, 11:25, 13:40, 15:55, 18:10, 20:25, 22:40",
             "scr":[
               {
                 "d":"2013-04-29",
@@ -3185,9 +3185,9 @@
             },
             "screenFormat":{
               "code":110002,
-              "$":"NumÃ©rique"
+              "$":"Numérique"
             },
-            "display":"SÃ©ances du mercredi 30 janvier 2013 : 09:15, 11:30, 13:45, 16:00, 18:15, 20:25, 22:30\u000d\u000aSÃ©ances du jeudi 31 janvier 2013 : 09:15, 11:30, 13:45, 16:00, 18:15, 20:25, 22:30\u000d\u000aSÃ©ances du vendredi 1 fÃ©vrier 2013 : 09:15, 11:30, 13:45, 16:00, 18:15, 20:25, 22:30\u000d\u000aSÃ©ances du samedi 2 fÃ©vrier 2013 : 09:15, 11:30, 13:45, 16:00, 18:15, 20:25, 22:30\u000d\u000aSÃ©ances du dimanche 3 fÃ©vrier 2013 : 09:15, 11:30, 13:45, 16:00, 18:15, 20:25, 22:30\u000d\u000aSÃ©ances du lundi 4 fÃ©vrier 2013 : 09:15, 11:30, 13:45, 16:00, 18:15, 20:25, 22:30\u000d\u000aSÃ©ances du mardi 5 fÃ©vrier 2013 : 09:15, 11:30, 13:45, 16:00, 18:15, 20:25, 22:30",
+            "display":"Séances du mercredi 30 janvier 2013 : 09:15, 11:30, 13:45, 16:00, 18:15, 20:25, 22:30\u000d\u000aSéances du jeudi 31 janvier 2013 : 09:15, 11:30, 13:45, 16:00, 18:15, 20:25, 22:30\u000d\u000aSéances du vendredi 1 février 2013 : 09:15, 11:30, 13:45, 16:00, 18:15, 20:25, 22:30\u000d\u000aSéances du samedi 2 février 2013 : 09:15, 11:30, 13:45, 16:00, 18:15, 20:25, 22:30\u000d\u000aSéances du dimanche 3 février 2013 : 09:15, 11:30, 13:45, 16:00, 18:15, 20:25, 22:30\u000d\u000aSéances du lundi 4 février 2013 : 09:15, 11:30, 13:45, 16:00, 18:15, 20:25, 22:30\u000d\u000aSéances du mardi 5 février 2013 : 09:15, 11:30, 13:45, 16:00, 18:15, 20:25, 22:30",
             "scr":[
               {
                 "d":"2013-04-27",
@@ -3433,9 +3433,9 @@
             },
             "screenFormat":{
               "code":110002,
-              "$":"NumÃ©rique"
+              "$":"Numérique"
             },
-            "display":"SÃ©ances du mercredi 30 janvier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSÃ©ances du jeudi 31 janvier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSÃ©ances du vendredi 1 fÃ©vrier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSÃ©ances du samedi 2 fÃ©vrier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSÃ©ances du dimanche 3 fÃ©vrier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSÃ©ances du lundi 4 fÃ©vrier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSÃ©ances du mardi 5 fÃ©vrier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35",
+            "display":"Séances du mercredi 30 janvier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSéances du jeudi 31 janvier 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSéances du vendredi 1 février 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSéances du samedi 2 février 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSéances du dimanche 3 février 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSéances du lundi 4 février 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35\u000d\u000aSéances du mardi 5 février 2013 : 09:10, 11:05, 13:00, 14:55, 16:50, 18:45, 20:40, 22:35",
             "scr":[
               {
                 "d":"2013-05-01",
@@ -3678,7 +3678,7 @@
                 "genre":[
                   {
                     "code":13002,
-                    "$":"ComÃ©die dramatique"
+                    "$":"Comédie dramatique"
                   }
                 ],
                 "poster":{
@@ -3706,9 +3706,9 @@
             },
             "screenFormat":{
               "code":110002,
-              "$":"NumÃ©rique"
+              "$":"Numérique"
             },
-            "display":"SÃ©ances du mercredi 30 janvier 2013 : 09:15, 11:05, 12:55, 14:45, 16:35, 18:30, 20:20, 22:15\u000d\u000aSÃ©ances du jeudi 31 janvier 2013 : 09:15, 11:05, 12:55, 14:45, 16:35, 18:30, 20:20, 22:15\u000d\u000aSÃ©ances du vendredi 1 fÃ©vrier 2013 : 09:15, 11:05, 12:55, 14:45, 16:35, 18:30, 20:20, 22:15\u000d\u000aSÃ©ances du samedi 2 fÃ©vrier 2013 : 09:15, 11:05, 12:55, 14:45, 16:35, 18:30, 20:20, 22:15\u000d\u000aSÃ©ances du dimanche 3 fÃ©vrier 2013 : 09:15, 11:05, 12:55, 14:45, 16:35, 18:30, 20:20, 22:15\u000d\u000aSÃ©ances du lundi 4 fÃ©vrier 2013 : 09:15, 11:05, 12:55, 14:45, 16:35, 18:30, 20:20, 22:15\u000d\u000aSÃ©ances du mardi 5 fÃ©vrier 2013 : 09:15, 11:05, 12:55, 14:45, 16:35, 18:30, 20:20, 22:15",
+            "display":"Séances du mercredi 30 janvier 2013 : 09:15, 11:05, 12:55, 14:45, 16:35, 18:30, 20:20, 22:15\u000d\u000aSéances du jeudi 31 janvier 2013 : 09:15, 11:05, 12:55, 14:45, 16:35, 18:30, 20:20, 22:15\u000d\u000aSéances du vendredi 1 février 2013 : 09:15, 11:05, 12:55, 14:45, 16:35, 18:30, 20:20, 22:15\u000d\u000aSéances du samedi 2 février 2013 : 09:15, 11:05, 12:55, 14:45, 16:35, 18:30, 20:20, 22:15\u000d\u000aSéances du dimanche 3 février 2013 : 09:15, 11:05, 12:55, 14:45, 16:35, 18:30, 20:20, 22:15\u000d\u000aSéances du lundi 4 février 2013 : 09:15, 11:05, 12:55, 14:45, 16:35, 18:30, 20:20, 22:15\u000d\u000aSéances du mardi 5 février 2013 : 09:15, 11:05, 12:55, 14:45, 16:35, 18:30, 20:20, 22:15",
             "scr":[
               {
                 "d":"2013-04-29",
@@ -3985,9 +3985,9 @@
             },
             "screenFormat":{
               "code":110002,
-              "$":"NumÃ©rique"
+              "$":"Numérique"
             },
-            "display":"SÃ©ances du mercredi 30 janvier 2013 : 09:15, 11:25, 13:35, 15:50, 18:05, 20:15, 22:25\u000d\u000aSÃ©ances du jeudi 31 janvier 2013 : 09:15, 11:25, 13:35, 15:50, 18:05, 20:15, 22:25\u000d\u000aSÃ©ances du vendredi 1 fÃ©vrier 2013 : 09:15, 11:25, 13:35, 15:50, 18:05, 20:15, 22:25\u000d\u000aSÃ©ances du samedi 2 fÃ©vrier 2013 : 09:15, 11:25, 13:35, 15:50, 18:05, 20:15, 22:25\u000d\u000aSÃ©ances du dimanche 3 fÃ©vrier 2013 : 09:15, 11:25, 13:35, 15:50, 18:05, 20:15, 22:25\u000d\u000aSÃ©ances du lundi 4 fÃ©vrier 2013 : 09:15, 11:25, 13:35, 15:50, 18:05, 20:15, 22:25\u000d\u000aSÃ©ances du mardi 5 fÃ©vrier 2013 : 09:15, 11:25, 13:35, 15:50, 18:05, 20:15, 22:25",
+            "display":"Séances du mercredi 30 janvier 2013 : 09:15, 11:25, 13:35, 15:50, 18:05, 20:15, 22:25\u000d\u000aSéances du jeudi 31 janvier 2013 : 09:15, 11:25, 13:35, 15:50, 18:05, 20:15, 22:25\u000d\u000aSéances du vendredi 1 février 2013 : 09:15, 11:25, 13:35, 15:50, 18:05, 20:15, 22:25\u000d\u000aSéances du samedi 2 février 2013 : 09:15, 11:25, 13:35, 15:50, 18:05, 20:15, 22:25\u000d\u000aSéances du dimanche 3 février 2013 : 09:15, 11:25, 13:35, 15:50, 18:05, 20:15, 22:25\u000d\u000aSéances du lundi 4 février 2013 : 09:15, 11:25, 13:35, 15:50, 18:05, 20:15, 22:25\u000d\u000aSéances du mardi 5 février 2013 : 09:15, 11:25, 13:35, 15:50, 18:05, 20:15, 22:25",
             "scr":[
               {
                 "d":"2013-04-27",

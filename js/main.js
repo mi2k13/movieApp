@@ -21,6 +21,8 @@ $(document).ready(function() {
   $.getJSON("allocine.json", function(data){
     loadTemplate('theaters', data);
   });
+
+  swipe('#hours', 16);
 });
 
 
@@ -152,7 +154,7 @@ function loadTemplate(templateName, templateInput) {
 function drawShow(start, duration, title) {
   var realStart    = (timeToMin(start) - 540) * 100 / (1500 - 540), // timeline starts at 9am
       realDuration = Number(duration) * 100 / (1500 - 540);
-  $('.timeline').append('<div class="show" style="width:' + realDuration + '%; left: ' + realStart + '%;"><span class="breath">' + title + '</span></div>');
+  $('#hours').append('<div class="show" style="width:' + realDuration + '%; left: ' + realStart + '%;"><span class="breath">' + title + '</span></div>');
 }
 
 function timeToMin(time) {
@@ -199,3 +201,59 @@ Handlebars.registerHelper('toHours', function(secs) {
 Handlebars.registerHelper('start', function(start, pause) {
   return sessionStart(start, pause);
 });
+
+
+function swipe(obj, nbItem) {
+
+
+  var ctrnWidth    = $(obj)[0].clientWidth,
+      IMG_WIDTH    = parseInt(ctrnWidth / nbItem, 10) * 5,
+      currentImg   = 0,
+      maxImages    = 3,
+      speed        = 500,
+      imgs,
+      swipeOptions = {
+        swipeStatus : swipeStatus,
+        threshold:75      
+      }
+
+
+console.log(ctrnWidth, IMG_WIDTH);
+
+  $(function() {
+    imgs = $(obj);
+    imgs.swipe(swipeOptions);
+  });
+
+  function swipeStatus(event, phase, direction, distance) {
+    if ( phase=="move" && (direction=="left" || direction=="right") ) {
+      if      (direction == "left")   scrollImages((IMG_WIDTH * currentImg) + distance, 0);
+      else if (direction == "right")  scrollImages((IMG_WIDTH * currentImg) - distance, 0);
+    }
+    
+    else if ( phase == "cancel")
+      scrollImages(IMG_WIDTH * currentImg, speed);
+    
+    else if ( phase =="end" )
+      if (direction == "right")
+        previousImage()
+      else if (direction == "left")     
+        nextImage()
+  }
+
+  function previousImage() {
+    currentImg = Math.max(currentImg-1, 0);
+    scrollImages( IMG_WIDTH * currentImg, speed);
+  }
+
+  function nextImage()  {
+    currentImg = Math.min(currentImg+1, maxImages-1);
+    scrollImages( IMG_WIDTH * currentImg, speed);
+  }
+    
+  function scrollImages(distance, duration) {
+    imgs.css("-webkit-transition-duration", (duration/1000).toFixed(1) + "s");
+    var value = (distance<0 ? "" : "-") + Math.abs(distance).toString();
+    imgs.css("-webkit-transform", "translate3d("+value +"px,0px,0px)");
+  }
+}
