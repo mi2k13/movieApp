@@ -6,10 +6,12 @@ body {
 }
 
 h2 {
+  margin-top: 10px;
   background-color: #FF432B;
   text-align: right;
   color: #fff;
   font-size: 20px;
+
 }
 
 h3 {
@@ -31,6 +33,20 @@ h3 {
   width: 13px;
   display: inline-block;
   text-align: center;
+}
+
+#content {
+  position: relative;
+  margin: 0 auto;
+  padding: 5px 15px;
+  max-width: 640px;
+  background-color: #fff;
+}
+
+@media  (min-width: 720px) {
+  body {
+    background-color: #333;
+  }
 }
 
 #timeline {
@@ -83,14 +99,12 @@ h3 {
   right: 0;
 }
 
-.theater {
-  margin-bottom: 80px;
-  padding-left: 0;
-}
+.theater { padding-left: 0; }
 
 .theater li {
   list-style: none;
-  min-height: 155px;
+  min-height: 120px;
+  padding-bottom: 5px;
   border-top: 1px solid #ccc;
 }
 

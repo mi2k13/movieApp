@@ -1,12 +1,11 @@
 {{#tpl}}
-  <h2 class="toggle highlight">{{ place.theater.name }}</h2>
+  <h2 class="highlight">{{ place.theater.name }}</h2>
   <ul class="theater sortable" data-theater="{{ place.theater.name }}">
     {{#movieShowtimes}}
     {{#notPreview preview}}
     <li data-movie="{{ onShow.movie.title }}" data-runtime="{{onShow.movie.runtime}}" data-duration="{{toHours onShow.movie.runtime}}">
       <div class="remove"></div>
       
-      <!-- <img src="img/up.jpg" alt="" class="thumb handle"/> -->
       <img src="http://fr.web.img4.acsta.net/r_160_240/b_1_d6d6d6/{{ onShow.movie.poster.path }}" alt="" class="thumb handle"/>
       
       <div class="desc">
@@ -22,15 +21,6 @@
           {{/is3D}}
         </div>
 
-        
-        <!-- <div class="infos">
-          {{#if onShow.movie.statistics}}
-            <span class="rate">{{isGood onShow.movie.statistics.pressRating}}</span> <span class="rate">{{isGood onShow.movie.statistics.userRating}}</span> 
-          {{/if}}
-          {{#onShow.movie.castingShort}}
-            {{ actors }}
-          {{/onShow.movie.castingShort}}
-        </div> -->
         <div>
           {{#scr}}
             {{#isToday d}}
@@ -60,9 +50,6 @@
   $('.remove').click(function(){
     $(this).parent('li').remove();
   });
-  $('.toggle').click(function(){
-    $(this).next('ul').slideToggle();
-  });
 
   $('.time').click(function(){
     if($(this).hasClass('selected') || $(this).hasClass('over'))
@@ -83,5 +70,4 @@
       drawShow(start, runtime, movie)
     }
   });
-
 </script>
