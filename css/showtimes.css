@@ -16,7 +16,7 @@
   cursor: pointer;
 }
 .showtimes__item--selected {
-  background-color: #4160D4;
+  background-color: #4175D4;
   color: #FFF;
   font-weight: bold;
 }
@@ -28,10 +28,10 @@
   background-color: #7BDE95;
 }
 .showtimes__item--soon {
-  background-color: #FFCC80;
+  background-color: #FFE480;
 }
 .showtimes__item--later {
-  background-color: #EFB55D;
+  background-color: #FFCC80;
 }
 
 .showtime__timeLeft {
