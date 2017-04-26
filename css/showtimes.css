@@ -19,6 +19,7 @@
   background-color: #4175D4;
   color: #FFF;
   font-weight: bold;
+  cursor: default;
 }
 .showtimes__item--over {
   opacity: .4;
@@ -35,7 +36,7 @@
   background-color: #FFCC80;
 }
 
-.showtime__timeLeft {
+.showtime__waiting {
   font-size: 10px;
 }
 

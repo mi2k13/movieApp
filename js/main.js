@@ -24,66 +24,64 @@ var app = {
 
   initComponents() {
     app.$showtimes = $('.js-showtime');
+    app.$waitings = $('.js-waiting');
+
     app.theater = $('.js-movies').attr('data-theater');
+    app.selectedShowtimes = [];
   },
 
 
   handleSelectShowtime: function() {
     var $this = $(this);
     var $movie = $this.parents('li');
+    var showtimeId = $this.attr('data-code');
 
-    if ($this.hasClass('showtimes__item--selected') || $this.hasClass('showtimes__item--over')) {
-      $this.removeClass('showtimes__item--selected');
-    } else {
+    if (!app.selectedShowtimes.includes(showtimeId)) {
       var start = $this.data('start');
       var movie = $movie.data('movie');
       var duration = $movie.data('duration');
       var runtime = $movie.data('runtime') / 60;
       var end = showtimeEnd(start, duration);
 
-      $this.addClass('showtimes__item--selected');
-      $this.find('.js-timeLeft').text('');
+      // add id to selectedShowtimes
+      app.selectedShowtimes.push(showtimeId);
 
-      app.addToTimeline(movie, start, end, runtime);
-      app.handleTimeLeft(end);
+      // update showtime view
+      $this.addClass('showtimes__item--selected');
+      $this.find('.js-waiting').text('');
+
+      // show other showtimes' time left
+      app.handleWaiting(end);
+
+      // add showtime to timeline
+      app.addShowtimeToTimeline(start, runtime, movie, showtimeId);
     }
   },
 
-  /**
-   * Puts movie in timeline and schedule
-   */
-  addToTimeline: function(movie, start, end, runtime) {
-    // add show to schedule
-    var insert = '<li><div class="schedules">' + start + ' - ' + end + '</div><div><b>' + movie + '</b><div class="infos">' + app.theater + '</div></div></li>';
-    $("#myMovies").append(insert);
-
-    // draw show in timeline
-    app.drawShow(start, runtime, movie);
-  },
 
   /**
    * Prints time left before next showtimes and add color to the closest's ones
    */
-  handleTimeLeft: function(end) {
+  handleWaiting: function(end) {
     var showtimesLength = app.$showtimes.length;
     var start;
     var waiting;
 
     for (var i = 0; i < showtimesLength - 1 ; ++i) {
       var $showtime = $(app.$showtimes[i]);
-      var $timeLeft = $showtime.find('.js-timeLeft');
+      var $waiting = $showtime.find('.js-waiting');
 
       start = $showtime.attr('data-start');
       waiting = timeToSec(start) - timeToSec(end);
 
-      // reset timeleft
+      // reset waiting time
       $showtime.removeClass('showtimes__item--imminent showtimes__item--soon showtimes__item--later');
 
       // Over showtimes
       if (waiting <= 0) {
         if (!$showtime.hasClass('showtimes__item--over') && !$showtime.hasClass('showtimes__item--selected')) {
           $showtime.addClass('showtimes__item--over');
-          $timeLeft.text('');
+          $waiting.text('');
         }
       }
       // Upcoming showtimes
@@ -102,22 +100,24 @@ var app = {
         }
 
         // show time left
-        if (waiting  <= 80 * 60) {
-          $timeLeft.text('(' + secToMin(waiting) + 'mn)');
+        if (waiting  <= 60 * 60) {
+          $waiting.text('(' + secToMin(waiting) + 'mn)');
         }
       }
     }
   },
 
-  drawShow: function(start, duration, title) {
-    var ctrnWidth    = 800,
-        itemWidth    = ctrnWidth / 15.5,
-        marginLeft   = 9 * 60,
-        realStart    = (timeToMin(start) - marginLeft) / 60 * itemWidth, // timeline starts at 9am
+
+  addShowtimeToTimeline: function(start, duration, title, showtimeId) {
+    var containerWidth = 800,
+        itemWidth    = containerWidth / 15.5,
+        marginLeft   = 9 * 60, // timeline starts at 9am
+        realStart    = (timeToMin(start) - marginLeft) / 60 * itemWidth,
         realDuration = Number(duration) / 60 * itemWidth;
 
-    $('#hours').append('<li class="timeline__show" style="width:' + realDuration + 'px; left: ' + realStart + 'px;">' + title + '</li>');
+    $('#hours').append('<li class="timeline__show" data-code="' + showtimeId + '" style="width:' + realDuration + 'px; left: ' + realStart + 'px;">' + title + '</li>');
   },
+
 
   loadTemplate: function(templateName, templateInput, callback) {
     var source;

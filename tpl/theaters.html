@@ -1,8 +1,4 @@
 {{#tpl}}
-  <h2 class="highlight">
-    {{ place.theater.name }}
-  </h2>
-
   <ul class="products js-movies js-sortable" data-theater="{{ place.theater.name }}">
     {{#movieShowtimes}}
       {{#notPreview preview}}
@@ -17,6 +13,8 @@
             src="http://fr.web.img4.acsta.net/r_160_240/b_1_d6d6d6/{{ onShow.movie.poster.path }}"
             alt="{{ onShow.movie.title }}"
             class="product__poster js-handle"
+            width=70
+            height=102
           />
 
           <div class="product__infos">
@@ -43,15 +41,16 @@
                   {{#t}}
                     <li
                       class="showtimes__item js-showtime"
-                      data-time="{{$}}"
-                      data-start="{{start $ p}}"
+                      data-time="{{ $ }}"
+                      data-start="{{ start $ p }}"
+                      data-code="{{ code }}"
                     >
                       {{#if pause}}
                         {{start $ p}}
                       {{else}}
                         {{$}}
                       {{/if}}
-                      <span class="showtime__timeLeft js-timeLeft"></span>
+                      <span class="showtime__waiting js-waiting"></span>
                     </li>
                   {{/t}}
                 {{/isToday}}
