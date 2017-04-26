@@ -25,14 +25,13 @@
             <div class="product__description">
               {{ onShow.movie.castingShort.directors }} &middot;
               {{ toHours onShow.movie.runtime}}
-              / <span class="showtime__label">
-                {{#VF version.original}}
-                  VF
-                {{/VF}}
-                {{#is3D screenFormat.$}}
-                  3D
-                {{/is3D}}
-              </span>
+
+              {{#VF version.original}}
+                &middot; <b>VF</b>
+              {{/VF}}
+              {{#is3D screenFormat.$}}
+                &middot; <b>3D</b>
+              {{/is3D}}
             </div>
 
             <ul class="showtimes">
