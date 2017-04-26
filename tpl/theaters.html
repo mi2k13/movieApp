@@ -1,73 +1,65 @@
 {{#tpl}}
-  <h2 class="highlight">{{ place.theater.name }}</h2>
-  <ul class="theater sortable" data-theater="{{ place.theater.name }}">
-    {{#movieShowtimes}}
-    {{#notPreview preview}}
-    <li data-movie="{{ onShow.movie.title }}" data-runtime="{{onShow.movie.runtime}}" data-duration="{{toHours onShow.movie.runtime}}">
-      <div class="remove"></div>
-      
-      <img src="http://fr.web.img4.acsta.net/r_160_240/b_1_d6d6d6/{{ onShow.movie.poster.path }}" alt="" class="thumb handle"/>
-      
-      <div class="desc">
-        <h3>{{ onShow.movie.title }}</h3>
-        <div class="infos">
-          {{onShow.movie.castingShort.directors}} / 
-          {{#toHours onShow.movie.runtime}}{{/toHours}}
-          {{#VF version.original}}
-            / <span class="label">VF</span>
-          {{/VF}}
-          {{#is3D screenFormat.$}}
-            / <span class="label">3D</span>
-          {{/is3D}}
-        </div>
+  <h2 class="highlight">
+    {{ place.theater.name }}
+  </h2>
 
-        <div>
-          {{#scr}}
-            {{#isToday d}}
-              {{#t}}
-                {{#if pause}}
-                <span class="time" data-time="{{$}}" data-start="{{start $ p}}">{{start $ p}} <span class="timeLeft"></span></span> 
-                {{else}}
-                <span class="time" data-time="{{$}}" data-start="{{start $ p}}">{{$}} <span class="timeLeft"></span></span> 
-                {{/if}}
-              {{/t}}
-            {{/isToday}}
-          {{/scr}}
-        </div>
-      </div>
-    </li>
-    {{/notPreview}}
-    {{/movieShowtimes}}    
+  <ul class="products js-movies js-sortable" data-theater="{{ place.theater.name }}">
+    {{#movieShowtimes}}
+      {{#notPreview preview}}
+        <li
+          class="products__item product"
+          data-movie="{{ onShow.movie.title }}"
+          data-runtime="{{ onShow.movie.runtime }}"
+          data-duration="{{ toHours onShow.movie.runtime }}"
+        >
+
+          <img
+            src="http://fr.web.img4.acsta.net/r_160_240/b_1_d6d6d6/{{ onShow.movie.poster.path }}"
+            alt="{{ onShow.movie.title }}"
+            class="product__poster js-handle"
+          />
+
+          <div class="product__infos">
+            <h3>
+              {{ onShow.movie.title }}
+            </h3>
+
+            <div class="product__description">
+              {{ onShow.movie.castingShort.directors }} &middot;
+              {{ toHours onShow.movie.runtime}}
+              / <span class="showtime__label">
+                {{#VF version.original}}
+                  VF
+                {{/VF}}
+                {{#is3D screenFormat.$}}
+                  3D
+                {{/is3D}}
+              </span>
+            </div>
+
+            <ul class="showtimes">
+              {{#scr}}
+                {{#isToday d}}
+                  {{#t}}
+                    <li
+                      class="showtimes__item js-showtime"
+                      data-time="{{$}}"
+                      data-start="{{start $ p}}"
+                    >
+                      {{#if pause}}
+                        {{start $ p}}
+                      {{else}}
+                        {{$}}
+                      {{/if}}
+                      <span class="showtime__timeLeft js-timeLeft"></span>
+                    </li>
+                  {{/t}}
+                {{/isToday}}
+              {{/scr}}
+            </ul>
+          </div>
+        </li>
+      {{/notPreview}}
+    {{/movieShowtimes}}
   </ul>
 {{/tpl}}
-
-
-<script type="text/javascript">
-  $('.sortable').sortable({
-    handle: '.handle'
-  });
-
-  $('.remove').click(function(){
-    $(this).parent('li').remove();
-  });
-
-  $('.time').click(function(){
-    if($(this).hasClass('selected') || $(this).hasClass('over'))
-      $(this).removeClass('selected');
-
-    else {
-      $(this).addClass('selected');
-      $(this).find('.timeLeft').text('');
-
-      var start = $(this).data('start');
-      var movie = $(this).parents('li').data('movie');
-      var duration = $(this).parents('li').data('duration');
-      var runtime = $(this).parents('li').data('runtime') / 60;
-      var theater = $(this).parents('ul').data('theater');
-      var end = sessionEnd(start, duration);
-
-      addFilm(theater, movie, start, end);
-      drawShow(start, runtime, movie)
-    }
-  });
-</script>

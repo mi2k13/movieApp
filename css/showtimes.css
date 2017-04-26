@@ -1,0 +1,45 @@
+.showtimes {
+  margin: -3px;
+  padding: 10px 0 0 0;
+  border-top: 1px solid #EBEFF1;
+}
+
+.showtimes__item {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 4px 3px;
+  padding: 8px 16px;
+  white-space: nowrap;
+  border-radius: 3px;
+  border-bottom: 1px solid #CCC;
+  background-color: #EBEFF1;
+  cursor: pointer;
+}
+.showtimes__item--selected {
+  background-color: #4160D4;
+  color: #FFF;
+  font-weight: bold;
+}
+.showtimes__item--over {
+  opacity: .4;
+}
+
+.showtimes__item--imminent {
+  background-color: #7BDE95;
+}
+.showtimes__item--soon {
+  background-color: #FFCC80;
+}
+.showtimes__item--later {
+  background-color: #EFB55D;
+}
+
+.showtime__timeLeft {
+  font-size: 10px;
+}
+
+.showtime__language {
+  padding: 4px 8px;
+  white-space: nowrap;
+  color: #FF432B;
+}

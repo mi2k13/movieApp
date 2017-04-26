@@ -1,170 +1,58 @@
 body {
-  background-color: #fff;
-  color: #333;
+  background-color: #FFF;
+  color: #54585D;
   font-size: 13px;
-  font-family: "helvetica", "arial";
+  font-family: "Arial", sans-serif;
 }
 
 h2 {
   margin-top: 10px;
-  background-color: #FF432B;
+  background-color: #4160D4;
   text-align: right;
-  color: #fff;
+  color: #FFF;
   font-size: 20px;
 
 }
 
 h3 {
-  margin: 7px 0 0;
-  color: #FF432B;
+  margin: 0;
   font-size: 18px;
+}
+
+ul {
+  list-style: none;
 }
 
 .highlight {
   padding: 3px 10px;
 }
 
-.infos {
-  color: #999;
-}
 
-.rate {
-  padding: 1px;
-  width: 13px;
-  display: inline-block;
-  text-align: center;
-}
-
-#content {
+.content {
   position: relative;
   margin: 0 auto;
   max-width: 640px;
-  background-color: #fff;
+  background-color: #FFF;
 }
 
 @media  (min-width: 720px) {
-  body { background-color: #eee; }
+  body { background-color: #EEE; }
   #content { padding: 5px 15px; }
 }
 
-#timeline {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 55px;
-  background-color: #f5f5f5;
-}
-  #hours {
-    position: absolute;
-    width: 800px;
-    margin: 0;
-    padding: 0;
-    font-size: 10px;
-    color: #999;
-  }
-  #timeline #hours li {
-    display: inline-block;
-    list-style: none;
-    width: 6%;
-    height: 55px;
-    border-right: 1px solid #ccc;
-    font-size: 7px;
-  }
 
-  #timeline .show {
-    font-size: 9px;
-    top: 20px;
-    height: 10px;
-    position: absolute;
-    padding: 5px 0;
-    background-color: #FF6F5C;
-    color: #fff;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  #timeline .show .breath {
-    padding: 5px;
-  }
-
-
-.remove {
-  width: 32px;
-  height: 32px;
-  background: url(img/remove.png) no-repeat;
-  position: absolute;
-  right: 0;
+.products {
+  padding: 0;
+  margin: 0;
 }
 
-.theater { padding-left: 0; }
-
-.theater li {
-  list-style: none;
+.products__item {
+  padding: 10px;
   min-height: 120px;
-  padding-bottom: 5px;
-  border-top: 1px solid #ccc;
 }
 
-.theater li.sortable-placeholder {
-    border: 1px dashed #ddd;
-    background-color: #f9f9f9;
-  }
-
-.theater li .infos {
-  margin-bottom: 10px;
-}
-
-.desc {
-  overflow: hidden;
-}
-
-.thumb {
-  width: 70px;
-  height: 102px;
-  float: left;
-  margin: 10px 10px 0 0;
-}
-
-
-.label, .time {
-  padding: 1px 5px;
-  white-space: nowrap;
-}
-
-.label {
-  color: #FF432B;
-}
-
-.time {
-  background-color: #e6e6e6;
-  border-bottom: 1px solid #ccc;
-  margin: 4px 3px;
-  display: inline-block;
-}
-
-.timeLeft {
-  font-size: 10px;
-}
-
-.selected {
-  font-weight: bold;
-  border: 3px solid #FF432B;
-}
-
-
-#myMovies li {
-  list-style: none;
-  margin-bottom: 5px;
-}
-
-#myMovies .schedules {
-  width: 72px;
-  font-size: 12px;
-  background-color: #e6e6e6;
-  display: inline-block;
-  padding: 2px 5px;
-  text-align: right;
-  float: left;
-  margin-right: 10px;
+.sortable-placeholder {
+  height: 140px;
+  border: 1px dashed #DDD;
+  background-color: #F9F9F9;
 }

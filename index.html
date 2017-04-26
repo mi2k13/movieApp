@@ -6,45 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/timeline.css" />
+  <link rel="stylesheet" href="css/showtimes.css" />
+  <link rel="stylesheet" href="css/product.css" />
   <!--[if lt IE 9]>
     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
 
 <body>
+  <div class="content">
+    <h2 class="highlight">
+      Mon programme
+    </h2>
 
-  <div id="content">
-
-    <h2 class="highlight">Mon programme</h2>
-    <section id="timeline">
-      <ul id="hours">
-        <li>09:00</li>
-        <li>10:00</li>
-        <li>11:00</li>
-        <li>12:00</li>
-        <li>13:00</li>
-        <li>14:00</li>
-        <li>15:00</li>
-        <li>16:00</li>
-        <li>17:00</li>
-        <li>18:00</li>
-        <li>19:00</li>
-        <li>20:00</li>
-        <li>21:00</li>
-        <li>22:00</li>
-        <li>23:00</li>
+    <section id="timeline" class="timeline">
+      <ul id="hours" class="timeline__hours">
+        <li class="timeline__hours__item">09:00</li>
+        <li class="timeline__hours__item">10:00</li>
+        <li class="timeline__hours__item">11:00</li>
+        <li class="timeline__hours__item">12:00</li>
+        <li class="timeline__hours__item">13:00</li>
+        <li class="timeline__hours__item">14:00</li>
+        <li class="timeline__hours__item">15:00</li>
+        <li class="timeline__hours__item">16:00</li>
+        <li class="timeline__hours__item">17:00</li>
+        <li class="timeline__hours__item">18:00</li>
+        <li class="timeline__hours__item">19:00</li>
+        <li class="timeline__hours__item">20:00</li>
+        <li class="timeline__hours__item">21:00</li>
+        <li class="timeline__hours__item">22:00</li>
+        <li class="timeline__hours__item">23:00</li>
       </ul>
     </section>
 
-    <section id="myMovies">
-      <ul></ul>
+    <section>
+      <ul id="myMovies"></ul>
     </section>
 
-    <section id="theaters"></section>
-
+    <section id="theaters" class="theaters"></section>
   </div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="lib/jquery-3.2.1.min.js"></script>
   <script src="lib/handlebars.js"></script>
   <script src="lib/jquery.touchSwipe.min.js"></script>
   <script src="lib/jquery.sortable.min.js"></script>
