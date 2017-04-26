@@ -22,6 +22,7 @@
 }
 .showtimes__item--over {
   opacity: .4;
+  cursor: default;
 }
 
 .showtimes__item--imminent {
